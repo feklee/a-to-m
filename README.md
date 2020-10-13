@@ -1,6 +1,8 @@
 Clover is an experimental construction system for assembling
 electric structures from interlocking leaves.
 
+![Laser cut mockup](mockup.jpg)
+
 License
 =======
 
