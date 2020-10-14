@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title "Top"
 Date ""
 Rev ""
@@ -18,8 +18,8 @@ L Connector_Generic:Conn_02x02_Counter_Clockwise J?
 U 1 1 5F6ACD6B
 P 3800 2100
 AR Path="/5C920754/5F6ACD6B" Ref="J?"  Part="1" 
-AR Path="/5C920CA4/5F6ACD6B" Ref="J11"  Part="1" 
-F 0 "J11" H 3850 2317 50  0000 C CNN
+AR Path="/5C920CA4/5F6ACD6B" Ref="J101"  Part="1" 
+F 0 "J101" H 3850 2317 50  0000 C CNN
 F 1 "MALE" H 3850 2226 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 3800 2100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 3800 2100 50  0001 C CNN
@@ -58,8 +58,8 @@ L Connector_Generic:Conn_02x02_Counter_Clockwise J?
 U 1 1 5F6ACD85
 P 3800 2600
 AR Path="/5C920754/5F6ACD85" Ref="J?"  Part="1" 
-AR Path="/5C920CA4/5F6ACD85" Ref="J12"  Part="1" 
-F 0 "J12" H 3850 2817 50  0000 C CNN
+AR Path="/5C920CA4/5F6ACD85" Ref="J102"  Part="1" 
+F 0 "J102" H 3850 2817 50  0000 C CNN
 F 1 "FEMALE" H 3850 2726 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 3800 2600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 3800 2600 50  0001 C CNN
@@ -146,8 +146,8 @@ L Connector_Generic:Conn_02x02_Counter_Clockwise J?
 U 1 1 5F6B6610
 P 4600 2100
 AR Path="/5C920754/5F6B6610" Ref="J?"  Part="1" 
-AR Path="/5C920CA4/5F6B6610" Ref="J13"  Part="1" 
-F 0 "J13" H 4650 2317 50  0000 C CNN
+AR Path="/5C920CA4/5F6B6610" Ref="J103"  Part="1" 
+F 0 "J103" H 4650 2317 50  0000 C CNN
 F 1 "MALE" H 4650 2226 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 4600 2100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 4600 2100 50  0001 C CNN
@@ -162,8 +162,8 @@ L Connector_Generic:Conn_02x02_Counter_Clockwise J?
 U 1 1 5F6B6626
 P 4600 2600
 AR Path="/5C920754/5F6B6626" Ref="J?"  Part="1" 
-AR Path="/5C920CA4/5F6B6626" Ref="J14"  Part="1" 
-F 0 "J14" H 4650 2817 50  0000 C CNN
+AR Path="/5C920CA4/5F6B6626" Ref="J104"  Part="1" 
+F 0 "J104" H 4650 2817 50  0000 C CNN
 F 1 "FEMALE" H 4650 2726 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 4600 2600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 4600 2600 50  0001 C CNN
@@ -178,8 +178,8 @@ L Connector_Generic:Conn_02x02_Counter_Clockwise J?
 U 1 1 5F6B83E3
 P 5400 2100
 AR Path="/5C920754/5F6B83E3" Ref="J?"  Part="1" 
-AR Path="/5C920CA4/5F6B83E3" Ref="J15"  Part="1" 
-F 0 "J15" H 5450 2317 50  0000 C CNN
+AR Path="/5C920CA4/5F6B83E3" Ref="J105"  Part="1" 
+F 0 "J105" H 5450 2317 50  0000 C CNN
 F 1 "MALE" H 5450 2226 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 5400 2100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 5400 2100 50  0001 C CNN
@@ -194,8 +194,8 @@ L Connector_Generic:Conn_02x02_Counter_Clockwise J?
 U 1 1 5F6B83F9
 P 5400 2600
 AR Path="/5C920754/5F6B83F9" Ref="J?"  Part="1" 
-AR Path="/5C920CA4/5F6B83F9" Ref="J16"  Part="1" 
-F 0 "J16" H 5450 2817 50  0000 C CNN
+AR Path="/5C920CA4/5F6B83F9" Ref="J106"  Part="1" 
+F 0 "J106" H 5450 2817 50  0000 C CNN
 F 1 "FEMALE" H 5450 2726 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 5400 2600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 5400 2600 50  0001 C CNN
@@ -210,8 +210,8 @@ L Connector_Generic:Conn_02x02_Counter_Clockwise J?
 U 1 1 5F6BA361
 P 6200 2100
 AR Path="/5C920754/5F6BA361" Ref="J?"  Part="1" 
-AR Path="/5C920CA4/5F6BA361" Ref="J17"  Part="1" 
-F 0 "J17" H 6250 2317 50  0000 C CNN
+AR Path="/5C920CA4/5F6BA361" Ref="J107"  Part="1" 
+F 0 "J107" H 6250 2317 50  0000 C CNN
 F 1 "MALE" H 6250 2226 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 6200 2100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 6200 2100 50  0001 C CNN
@@ -226,8 +226,8 @@ L Connector_Generic:Conn_02x02_Counter_Clockwise J?
 U 1 1 5F6BA377
 P 6200 2600
 AR Path="/5C920754/5F6BA377" Ref="J?"  Part="1" 
-AR Path="/5C920CA4/5F6BA377" Ref="J18"  Part="1" 
-F 0 "J18" H 6250 2817 50  0000 C CNN
+AR Path="/5C920CA4/5F6BA377" Ref="J108"  Part="1" 
+F 0 "J108" H 6250 2817 50  0000 C CNN
 F 1 "FEMALE" H 6250 2726 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 6200 2600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 6200 2600 50  0001 C CNN
@@ -302,7 +302,7 @@ Wire Wire Line
 	6600 2700 6600 2750
 Connection ~ 6550 2700
 Wire Wire Line
-	2350 4200 2700 4200
+	2550 4200 2700 4200
 Wire Wire Line
 	3100 4200 3350 4200
 $Comp
@@ -336,8 +336,6 @@ F 6 "SHOU HAN" H 2900 4200 50  0001 C CNN "Manufacturer"
 	1    2900 4200
 	1    0    0    -1  
 $EndComp
-Text Label 2350 4200 2    50   ~ 0
-BUTTON1
 Wire Notes Line
 	3400 1800 6750 1800
 Wire Notes Line
@@ -353,22 +351,9 @@ Wire Notes Line
 Text Notes 1900 3750 0    50   ~ 0
 Action switches
 Wire Wire Line
-	3850 4200 4200 4200
+	4050 4200 4200 4200
 Wire Wire Line
 	4600 4200 4850 4200
-$Comp
-L power:GND #PWR?
-U 1 1 5F85B221
-P 4850 4250
-AR Path="/5C920754/5F85B221" Ref="#PWR?"  Part="1" 
-AR Path="/5C920CA4/5F85B221" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 4850 4000 50  0001 C CNN
-F 1 "GND" H 4855 4077 50  0000 C CNN
-F 2 "" H 4850 4250 50  0001 C CNN
-F 3 "" H 4850 4250 50  0001 C CNN
-	1    4850 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4850 4200 4850 4250
 $Comp
@@ -387,10 +372,8 @@ F 6 "SHOU HAN" H 4400 4200 50  0001 C CNN "Manufacturer"
 	1    4400 4200
 	1    0    0    -1  
 $EndComp
-Text Label 3850 4200 2    50   ~ 0
-BUTTON2
 Wire Wire Line
-	5350 4200 5700 4200
+	5550 4200 5700 4200
 Wire Wire Line
 	6100 4200 6350 4200
 $Comp
@@ -424,10 +407,8 @@ F 6 "SHOU HAN" H 5900 4200 50  0001 C CNN "Manufacturer"
 	1    5900 4200
 	1    0    0    -1  
 $EndComp
-Text Label 5350 4200 2    50   ~ 0
-BUTTON3
 Wire Wire Line
-	6850 4200 7200 4200
+	7050 4200 7200 4200
 Wire Wire Line
 	7600 4200 7850 4200
 $Comp
@@ -461,12 +442,91 @@ F 6 "SHOU HAN" H 7400 4200 50  0001 C CNN "Manufacturer"
 	1    7400 4200
 	1    0    0    -1  
 $EndComp
-Text Label 6850 4200 2    50   ~ 0
-BUTTON4
 Wire Notes Line
 	1900 3800 8050 3800
 Wire Notes Line
 	8050 3800 8050 4500
 Wire Notes Line
 	8050 4500 1900 4500
+$Comp
+L power:GND #PWR?
+U 1 1 5F8EB7F9
+P 4850 4250
+AR Path="/5C920754/5F8EB7F9" Ref="#PWR?"  Part="1" 
+AR Path="/5C920CA4/5F8EB7F9" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 4850 4000 50  0001 C CNN
+F 1 "GND" H 4855 4077 50  0000 C CNN
+F 2 "" H 4850 4250 50  0001 C CNN
+F 3 "" H 4850 4250 50  0001 C CNN
+	1    4850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J111
+U 1 1 5F8ECF05
+P 2350 4200
+F 0 "J111" H 2268 3975 50  0000 C CNN
+F 1 "STANDOFF" H 2268 4066 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 2350 4200 50  0001 C CNN
+F 3 "~" H 2350 4200 50  0001 C CNN
+	1    2350 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J112
+U 1 1 5F8EF776
+P 3850 4200
+F 0 "J112" H 3768 3975 50  0000 C CNN
+F 1 "STANDOFF" H 3768 4066 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3850 4200 50  0001 C CNN
+F 3 "~" H 3850 4200 50  0001 C CNN
+	1    3850 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J113
+U 1 1 5F8F0A30
+P 5350 4200
+F 0 "J113" H 5268 3975 50  0000 C CNN
+F 1 "STANDOFF" H 5268 4066 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 5350 4200 50  0001 C CNN
+F 3 "~" H 5350 4200 50  0001 C CNN
+	1    5350 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J114
+U 1 1 5F8F0B43
+P 6850 4200
+F 0 "J114" H 6768 3975 50  0000 C CNN
+F 1 "STANDOFF" H 6768 4066 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 6850 4200 50  0001 C CNN
+F 3 "~" H 6850 4200 50  0001 C CNN
+	1    6850 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0131
+U 1 1 5FA30673
+P 2500 2750
+F 0 "#PWR0131" H 2500 2500 50  0001 C CNN
+F 1 "GND" H 2505 2577 50  0000 C CNN
+F 2 "" H 2500 2750 50  0001 C CNN
+F 3 "" H 2500 2750 50  0001 C CNN
+	1    2500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5FA30DFE
+P 2500 2550
+F 0 "#FLG0103" H 2500 2625 50  0001 C CNN
+F 1 "PWR_FLAG" H 2500 2723 50  0000 C CNN
+F 2 "" H 2500 2550 50  0001 C CNN
+F 3 "~" H 2500 2550 50  0001 C CNN
+	1    2500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2550 2500 2750
 $EndSCHEMATC
