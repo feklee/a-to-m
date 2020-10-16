@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title "Bottom"
 Date ""
 Rev ""
@@ -1276,12 +1276,12 @@ Tag-Connect for programming\nboot loader
 $Comp
 L node:+5VB #PWR01
 U 1 1 5F965E09
-P 8500 4700
-F 0 "#PWR01" H 8500 4550 50  0001 C CNN
-F 1 "+5VB" H 8515 4873 50  0000 C CNN
-F 2 "" H 8500 4700 50  0001 C CNN
-F 3 "" H 8500 4700 50  0001 C CNN
-	1    8500 4700
+P 8500 4400
+F 0 "#PWR01" H 8500 4250 50  0001 C CNN
+F 1 "+5VB" H 8515 4573 50  0000 C CNN
+F 2 "" H 8500 4400 50  0001 C CNN
+F 3 "" H 8500 4400 50  0001 C CNN
+	1    8500 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1346,18 +1346,18 @@ BUZZER
 Wire Wire Line
 	8350 4900 8500 4900
 Wire Wire Line
-	8500 4700 8500 4900
+	8500 4750 8500 4900
 Connection ~ 8500 4900
 Wire Wire Line
 	8500 4900 8600 4900
 Wire Notes Line
-	7050 4400 9250 4400
+	7050 4100 9250 4100
 Wire Notes Line
-	9250 4400 9250 6100
+	9250 4100 9250 6100
 Wire Notes Line
 	9250 6100 7050 6100
 Wire Notes Line
-	7050 6100 7050 4400
+	7050 6100 7050 4100
 Text Notes 7050 6300 0    50   ~ 0
 Maybe rework, see:\nhttps://electronics.stackexchange.com/q/527338/21817
 $Comp
@@ -1421,4 +1421,17 @@ Text Label 4450 6200 2    50   ~ 0
 ~RST
 Wire Wire Line
 	2650 4900 3450 4900
+$Comp
+L Device:R_Small_US R16
+U 1 1 5F8D7356
+P 8500 4650
+F 0 "R16" V 8295 4650 50  0000 C CNN
+F 1 "47" V 8386 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8500 4650 50  0001 C CNN
+F 3 "~" H 8500 4650 50  0001 C CNN
+	1    8500 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8500 4550 8500 4400
 $EndSCHEMATC
