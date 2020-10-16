@@ -1291,10 +1291,11 @@ P 8350 5000
 F 0 "D5" V 8300 4800 50  0000 L CNN
 F 1 "1N4148" V 8400 4600 50  0000 L CNN
 F 2 "" V 8350 5000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811141222_Nexperia-PMBT3904-215_C8667.pdf" V 8350 5000 50  0001 C CNN
-F 4 "C8667" H 8350 5000 50  0001 C CNN "LCSC Part #"
-F 5 "PMBT3904,215" H 8350 5000 50  0001 C CNN "MPN"
-F 6 "Nexperia" H 8350 5000 50  0001 C CNN "Manufacturer"
+F 3 "https://datasheet.lcsc.com/szlcsc/1810251613_Diodes-Incorporated-1N4148WS-7-F_C60580.pdf" V 8350 5000 50  0001 C CNN
+F 4 "C60580" H 8350 5000 50  0001 C CNN "LCSC Part #"
+F 5 "1N4148WS-7-F" H 8350 5000 50  0001 C CNN "MPN"
+F 6 "Diodes Incorporated" H 8350 5000 50  0001 C CNN "Manufacturer"
+F 7 "SOD-323" H 8350 5000 50  0001 C CNN "Package"
 	1    8350 5000
 	0    1    1    0   
 $EndComp

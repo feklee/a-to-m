@@ -1802,7 +1802,7 @@
   )
 
   (module Resistor_SMD:R_0402_1005Metric (layer F.Cu) (tedit 5B301BBD) (tstamp 5F881FD9)
-    (at 112.35 111.312)
+    (at 112.037 114.554)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5C920754/5F72D0B7)
@@ -1938,7 +1938,7 @@
   )
 
   (module Resistor_SMD:R_0402_1005Metric (layer F.Cu) (tedit 5B301BBD) (tstamp 5F8816AF)
-    (at 115.144 112.582)
+    (at 115.339 113.792)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5C920754/5F726620)
@@ -2210,7 +2210,7 @@
   )
 
   (module Capacitor_SMD:C_0402_1005Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5F881831)
-    (at 88.441001 106.299001)
+    (at 118.392 108.712)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags capacitor)
     (path /5C920754/5F6C6444)
@@ -2245,8 +2245,8 @@
     )
   )
 
-  (module Capacitor_SMD:C_0402_1005Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5F881801)
-    (at 91.311001 106.449001)
+  (module Capacitor_SMD:C_0402_1005Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 5F896460)
+    (at 116.868 107.188)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags capacitor)
     (path /5C920754/5F6EE032)
@@ -2426,7 +2426,7 @@
   )
 
   (module node:YSX321SL (layer F.Cu) (tedit 5F85673F) (tstamp 5F881F4C)
-    (at 89.306 103.364)
+    (at 115.74 109.64)
     (path /5C920754/5F6DFEBF)
     (fp_text reference Y1 (at 0 -2.286) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
