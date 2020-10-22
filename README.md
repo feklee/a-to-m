@@ -3,6 +3,13 @@ electric structures from interlocking leaves.
 
 ![Laser cut mockup](mockup.jpg)
 
+
+Design guidelines
+=================
+
+For areas without solder mask, don’t use components smaller than 0603.
+
+
 License
 =======
 
