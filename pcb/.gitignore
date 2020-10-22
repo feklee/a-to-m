@@ -27,4 +27,11 @@ fp-info-cache
 *.xml
 *.csv
 
+# Gerbers
 gerber
+
+# FreeCad
+*.fcstd1
+*.FCStd1
+*.fcstd2
+*.FCStd2
