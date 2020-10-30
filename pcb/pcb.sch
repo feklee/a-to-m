@@ -14,13 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4700 3050 850  800 
+S 4500 3000 1000 1000
 U 5C920754
 F0 "Lower Board" 50
 F1 "lower.sch" 50
 $EndSheet
 $Sheet
-S 5650 3050 850  800 
+S 6000 3000 1000 1000
 U 5C920CA4
 F0 "Upper Board" 50
 F1 "upper.sch" 50
