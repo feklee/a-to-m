@@ -416,4 +416,15 @@ NoConn ~ 8650 3700
 NoConn ~ 7050 3700
 NoConn ~ 7050 3900
 NoConn ~ 7050 4100
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 5FAB1773
+P 6050 2000
+F 0 "F?" V 5845 2000 50  0000 C CNN
+F 1 "Polyfuse_Small" V 5936 2000 50  0000 C CNN
+F 2 "" H 6100 1800 50  0001 L CNN
+F 3 "~" H 6050 2000 50  0001 C CNN
+	1    6050 2000
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
