@@ -1,0 +1,12 @@
+(module JLCPCB-tooling-hole (layer F.Cu) (tedit 5FA500DC)
+  (descr https://support.jlcpcb.com/article/92-how-to-add-tooling-holes-for-smt-assembly-order)
+  (attr smd)
+  (fp_text reference jlcpcb-tooling-hole (at 0 1.524) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.2)))
+  )
+  (fp_text value VAL** (at 0 -1.524) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.2)))
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 1.152 1.152) (drill 1.152) (layers *.Cu *.Mask)
+    (solder_mask_margin 0.074) (clearance 0.124))
+)
