@@ -25,4 +25,43 @@ U 5C920CA4
 F0 "Upper Board" 50
 F1 "upper.sch" 50
 $EndSheet
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5FB14092
+P 4250 4800
+AR Path="/5C920754/5FB14092" Ref="H?"  Part="1" 
+AR Path="/5FB14092" Ref="H1"  Part="1" 
+F 0 "H1" H 4350 4846 50  0000 L CNN
+F 1 "MountingHole" H 4350 4755 50  0000 L CNN
+F 2 "node:JLCPCB-tooling-hole" H 4250 4800 50  0001 C CNN
+F 3 "~" H 4250 4800 50  0001 C CNN
+	1    4250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5FB14098
+P 4250 5100
+AR Path="/5C920754/5FB14098" Ref="H?"  Part="1" 
+AR Path="/5FB14098" Ref="H2"  Part="1" 
+F 0 "H2" H 4350 5146 50  0000 L CNN
+F 1 "MountingHole" H 4350 5055 50  0000 L CNN
+F 2 "node:JLCPCB-tooling-hole" H 4250 5100 50  0001 C CNN
+F 3 "~" H 4250 5100 50  0001 C CNN
+	1    4250 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5FB14457
+P 4250 5400
+AR Path="/5C920754/5FB14457" Ref="H?"  Part="1" 
+AR Path="/5FB14457" Ref="H3"  Part="1" 
+F 0 "H3" H 4350 5446 50  0000 L CNN
+F 1 "MountingHole" H 4350 5355 50  0000 L CNN
+F 2 "node:JLCPCB-tooling-hole" H 4250 5400 50  0001 C CNN
+F 3 "~" H 4250 5400 50  0001 C CNN
+	1    4250 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
