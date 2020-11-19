@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 380)
-    (tracks 0)
+    (tracks 7)
     (zones 0)
     (modules 22)
     (nets 37)
@@ -38,7 +38,9 @@
   )
 
   (setup
-    (last_trace_width 0.1524)
+    (last_trace_width 1.2192)
+    (user_trace_width 0.1524)
+    (user_trace_width 1.2192)
     (trace_clearance 0.1524)
     (zone_clearance 0.508)
     (zone_45_only no)
@@ -458,7 +460,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal (layer F.Cu) (tedit 59FED5CB) (tstamp 5FB65376)
-    (at 138.66 109.16)
+    (at 138.896 109.73)
     (descr "Through hole angled pin header, 2x02, 2.54mm pitch, 6mm pin length, double rows")
     (tags "Through hole angled pin header THT 2x02 2.54mm double row")
     (path /5FA6C89B/5FA6D1B6)
@@ -573,7 +575,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal (layer F.Cu) (tedit 59FED5CB) (tstamp 5FB6BCA4)
-    (at 158.34 100.3 180)
+    (at 158.104 100.27 180)
     (descr "Through hole angled pin header, 2x02, 2.54mm pitch, 6mm pin length, double rows")
     (tags "Through hole angled pin header THT 2x02 2.54mm double row")
     (path /5FA6C6C8/5FB6CCC1)
@@ -814,7 +816,7 @@
   )
 
   (module Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal (layer B.Cu) (tedit 5A19A41C) (tstamp 5FB65A86)
-    (at 132.6 103.7 180)
+    (at 132.8 103.73 180)
     (descr "Through hole angled socket strip, 2x02, 2.54mm pitch, 8.51mm socket length, double cols (from Kicad 4.0.7), script generated")
     (tags "Through hole angled socket strip THT 2x02 2.54mm double row")
     (path /5FA6C89B/5FA83015)
@@ -894,7 +896,7 @@
   )
 
   (module Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal (layer B.Cu) (tedit 5A19A41C) (tstamp 5FB65AC1)
-    (at 164.5 106.2)
+    (at 164.2 106.27)
     (descr "Through hole angled socket strip, 2x02, 2.54mm pitch, 8.51mm socket length, double cols (from Kicad 4.0.7), script generated")
     (tags "Through hole angled socket strip THT 2x02 2.54mm double row")
     (path /5FA6C6C8/5FB6CCC7)
@@ -1010,7 +1012,7 @@
   )
 
   (module MountingHole:MountingHole_2.2mm_M2_Pad_Via (layer F.Cu) (tedit 56DDB9C7) (tstamp 5FB6766C)
-    (at 133.6 99.05 270)
+    (at 134.07 99 270)
     (descr "Mounting Hole 2.2mm, M2")
     (tags "mounting hole 2.2mm m2")
     (path /5FA6C89B/5FB8A10A)
@@ -1047,7 +1049,7 @@
   )
 
   (module MountingHole:MountingHole_2.2mm_M2_Pad_Via (layer F.Cu) (tedit 56DDB9C7) (tstamp 5FB6767C)
-    (at 133.6 111.2 270)
+    (at 134.07 111 270)
     (descr "Mounting Hole 2.2mm, M2")
     (tags "mounting hole 2.2mm m2")
     (path /5FA6C89B/5FB8C43D)
@@ -1084,7 +1086,7 @@
   )
 
   (module MountingHole:MountingHole_2.2mm_M2_Pad_Via (layer F.Cu) (tedit 56DDB9C7) (tstamp 5FB6768C)
-    (at 115 104.9 270)
+    (at 113.5 105 270)
     (descr "Mounting Hole 2.2mm, M2")
     (tags "mounting hole 2.2mm m2")
     (path /5FA6C89B/5FB8C4F1)
@@ -1121,7 +1123,7 @@
   )
 
   (module MountingHole:MountingHole_2.2mm_M2_Pad_Via (layer F.Cu) (tedit 56DDB9C7) (tstamp 5FB6769C)
-    (at 163.302944 112.365685 90)
+    (at 162.93 111 90)
     (descr "Mounting Hole 2.2mm, M2")
     (tags "mounting hole 2.2mm m2")
     (path /5FA6C6C8/5FB93146)
@@ -1158,7 +1160,7 @@
   )
 
   (module MountingHole:MountingHole_2.2mm_M2_Pad_Via (layer F.Cu) (tedit 56DDB9C7) (tstamp 5FB676AC)
-    (at 163.436218 98.632413 90)
+    (at 162.93 99 90)
     (descr "Mounting Hole 2.2mm, M2")
     (tags "mounting hole 2.2mm m2")
     (path /5FA6C6C8/5FB9314D)
@@ -1195,7 +1197,7 @@
   )
 
   (module MountingHole:MountingHole_2.2mm_M2_Pad_Via (layer F.Cu) (tedit 56DDB9C7) (tstamp 5FB676BC)
-    (at 182.602944 105.565687 90)
+    (at 183.5 105 90)
     (descr "Mounting Hole 2.2mm, M2")
     (tags "mounting hole 2.2mm m2")
     (path /5FA6C6C8/5FB93153)
@@ -1611,5 +1613,13 @@
   (gr_line (start 145.982929 102.499708) (end 145.965878 102.498834) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 146 102.5) (end 145.982929 102.499708) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 151 102.5) (end 146 102.5) (layer Edge.Cuts) (width 0.05))
+
+  (segment (start 109.8 101.8) (end 111.7 103.7) (width 1.2192) (layer F.Cu) (net 29))
+  (segment (start 109.4 101.8) (end 109.8 101.8) (width 1.2192) (layer F.Cu) (net 29))
+  (segment (start 111.7 103.7) (end 111.7 106.3) (width 1.2192) (layer F.Cu) (net 29))
+  (segment (start 111.7 106.3) (end 109.9 108.1) (width 1.2192) (layer F.Cu) (net 29))
+  (segment (start 164.820176 101.594414) (end 161.494414 101.594414) (width 1.2192) (layer F.Cu) (net 0))
+  (segment (start 167.6 104.374238) (end 164.820176 101.594414) (width 1.2192) (layer F.Cu) (net 0))
+  (segment (start 167.6 105.7) (end 167.6 104.374238) (width 1.2192) (layer F.Cu) (net 0))
 
 )
