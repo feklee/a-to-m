@@ -503,7 +503,7 @@ U 1 1 5FBA90B8
 P 1550 4500
 F 0 "J3" H 1657 5367 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1657 5276 50  0000 C CNN
-F 2 "" H 1700 4500 50  0001 C CNN
+F 2 "node:SOFNG_MC-311D" H 1700 4500 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1700 4500 50  0001 C CNN
 	1    1550 4500
 	1    0    0    -1  
