@@ -272,9 +272,9 @@ Text Label 8800 4000 0    50   ~ 0
 TXLED
 Text Label 8800 4100 0    50   ~ 0
 RXLED
-Text Label 3200 5950 2    50   ~ 0
+Text Label 3050 3000 2    50   ~ 0
 TXLED
-Text Label 3200 6350 2    50   ~ 0
+Text Label 3050 3300 2    50   ~ 0
 RXLED
 NoConn ~ 8650 4200
 NoConn ~ 8650 4300
@@ -344,96 +344,10 @@ Wire Wire Line
 	2800 1250 2800 1650
 Wire Wire Line
 	2800 1650 2900 1650
-$Comp
-L power:+5V #PWR0108
-U 1 1 5FB52707
-P 4400 5950
-AR Path="/5FA6C89B/5FB52707" Ref="#PWR0108"  Part="1" 
-AR Path="/5FA6C6C8/5FB52707" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0108" H 4400 5800 50  0001 C CNN
-F 1 "+5V" H 4415 6123 50  0000 C CNN
-F 2 "" H 4400 5950 50  0001 C CNN
-F 3 "" H 4400 5950 50  0001 C CNN
-	1    4400 5950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 5FB5270D
-P 4100 5950
-AR Path="/5FA6C6C8/5FB5270D" Ref="R?"  Part="1" 
-AR Path="/5FA6C89B/5FB5270D" Ref="R1"  Part="1" 
-F 0 "R1" H 4168 5996 50  0000 L CNN
-F 1 "1k" H 4168 5905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4100 5950 50  0001 C CNN
-F 3 "~" H 4100 5950 50  0001 C CNN
-	1    4100 5950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 5FB52713
-P 3750 5950
-AR Path="/5FA6C6C8/5FB52713" Ref="D?"  Part="1" 
-AR Path="/5FA6C89B/5FB52713" Ref="D1"  Part="1" 
-F 0 "D1" V 3796 5880 50  0000 R CNN
-F 1 "Red" V 3705 5880 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3750 5950 50  0001 C CNN
-F 3 "~" V 3750 5950 50  0001 C CNN
-	1    3750 5950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4400 5950 4200 5950
+	3050 3000 3500 3000
 Wire Wire Line
-	4000 5950 3850 5950
-$Comp
-L Device:LED_Small D?
-U 1 1 5FB5271C
-P 3750 6350
-AR Path="/5FA6C6C8/5FB5271C" Ref="D?"  Part="1" 
-AR Path="/5FA6C89B/5FB5271C" Ref="D2"  Part="1" 
-F 0 "D2" V 3796 6280 50  0000 R CNN
-F 1 "Green" V 3705 6280 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3750 6350 50  0001 C CNN
-F 3 "~" V 3750 6350 50  0001 C CNN
-	1    3750 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 5FB52722
-P 4100 6350
-AR Path="/5FA6C6C8/5FB52722" Ref="R?"  Part="1" 
-AR Path="/5FA6C89B/5FB52722" Ref="R2"  Part="1" 
-F 0 "R2" H 4168 6396 50  0000 L CNN
-F 1 "1k" H 4168 6305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4100 6350 50  0001 C CNN
-F 3 "~" H 4100 6350 50  0001 C CNN
-	1    4100 6350
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR0109
-U 1 1 5FB52728
-P 4400 6350
-AR Path="/5FA6C89B/5FB52728" Ref="#PWR0109"  Part="1" 
-AR Path="/5FA6C6C8/5FB52728" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0109" H 4400 6200 50  0001 C CNN
-F 1 "+5V" H 4415 6523 50  0000 C CNN
-F 2 "" H 4400 6350 50  0001 C CNN
-F 3 "" H 4400 6350 50  0001 C CNN
-	1    4400 6350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4200 6350 4400 6350
-Wire Wire Line
-	4000 6350 3850 6350
-Wire Wire Line
-	3200 5950 3650 5950
-Wire Wire Line
-	3200 6350 3650 6350
+	3050 3300 3500 3300
 Wire Wire Line
 	2150 3900 2450 3900
 Text Label 2450 3900 0    50   ~ 0
@@ -561,39 +475,37 @@ Wire Wire Line
 Wire Wire Line
 	1650 2200 1650 2450
 $Comp
-L Connector_Generic:Conn_01x01 J3
-U 1 1 5FB8A10A
-P 3700 3000
-F 0 "J3" H 3780 3042 50  0000 L CNN
-F 1 "Conn_01x01" H 3780 2951 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3700 3000 50  0001 C CNN
-F 3 "~" H 3700 3000 50  0001 C CNN
-	1    3700 3000
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5FB8C4F1
+P 3700 3600
+F 0 "J5" H 3780 3642 50  0000 L CNN
+F 1 "STANDOFF" H 3780 3551 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3700 3600 50  0001 C CNN
+F 3 "~" H 3700 3600 50  0001 C CNN
+	1    3700 3600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3500 3000
+NoConn ~ 3500 3600
 $Comp
 L Connector_Generic:Conn_01x01 J4
 U 1 1 5FB8C43D
 P 3700 3300
 F 0 "J4" H 3780 3342 50  0000 L CNN
-F 1 "Conn_01x01" H 3780 3251 50  0000 L CNN
+F 1 "STANDOFF" H 3780 3251 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3700 3300 50  0001 C CNN
 F 3 "~" H 3700 3300 50  0001 C CNN
 	1    3700 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J5
-U 1 1 5FB8C4F1
-P 3700 3600
-F 0 "J5" H 3780 3642 50  0000 L CNN
-F 1 "Conn_01x01" H 3780 3551 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3700 3600 50  0001 C CNN
-F 3 "~" H 3700 3600 50  0001 C CNN
-	1    3700 3600
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5FB8A10A
+P 3700 3000
+F 0 "J3" H 3780 3042 50  0000 L CNN
+F 1 "STANDOFF" H 3780 2951 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3700 3000 50  0001 C CNN
+F 3 "~" H 3700 3000 50  0001 C CNN
+	1    3700 3000
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3500 3300
-NoConn ~ 3500 3600
 $EndSCHEMATC

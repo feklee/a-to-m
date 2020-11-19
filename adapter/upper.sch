@@ -98,43 +98,131 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5FB93146
-P 7200 2900
+P 8700 2000
 AR Path="/5FA6C89B/5FB93146" Ref="J?"  Part="1" 
 AR Path="/5FA6C6C8/5FB93146" Ref="J13"  Part="1" 
-F 0 "J13" H 7280 2942 50  0000 L CNN
-F 1 "Conn_01x01" H 7280 2851 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7200 2900 50  0001 C CNN
-F 3 "~" H 7200 2900 50  0001 C CNN
-	1    7200 2900
+F 0 "J13" H 8780 2042 50  0000 L CNN
+F 1 "STANDOFF" H 8780 1951 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8700 2000 50  0001 C CNN
+F 3 "~" H 8700 2000 50  0001 C CNN
+	1    8700 2000
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7000 2900
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5FB9314D
-P 7200 3200
+P 8700 2500
 AR Path="/5FA6C89B/5FB9314D" Ref="J?"  Part="1" 
 AR Path="/5FA6C6C8/5FB9314D" Ref="J14"  Part="1" 
-F 0 "J14" H 7280 3242 50  0000 L CNN
-F 1 "Conn_01x01" H 7280 3151 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7200 3200 50  0001 C CNN
-F 3 "~" H 7200 3200 50  0001 C CNN
-	1    7200 3200
+F 0 "J14" H 8780 2542 50  0000 L CNN
+F 1 "STANDOFF" H 8780 2451 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8700 2500 50  0001 C CNN
+F 3 "~" H 8700 2500 50  0001 C CNN
+	1    8700 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5FB93153
-P 7200 3500
+P 8700 3000
 AR Path="/5FA6C89B/5FB93153" Ref="J?"  Part="1" 
 AR Path="/5FA6C6C8/5FB93153" Ref="J15"  Part="1" 
-F 0 "J15" H 7280 3542 50  0000 L CNN
-F 1 "Conn_01x01" H 7280 3451 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7200 3500 50  0001 C CNN
-F 3 "~" H 7200 3500 50  0001 C CNN
-	1    7200 3500
+F 0 "J15" H 8780 3042 50  0000 L CNN
+F 1 "STANDOFF" H 8780 2951 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8700 3000 50  0001 C CNN
+F 3 "~" H 8700 3000 50  0001 C CNN
+	1    8700 3000
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7000 3200
-NoConn ~ 7000 3500
+NoConn ~ 8500 3000
+$Comp
+L power:+5V #PWR?
+U 1 1 5FBB343F
+P 7250 2500
+AR Path="/5FA6C89B/5FBB343F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6C6C8/5FBB343F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7250 2350 50  0001 C CNN
+F 1 "+5V" H 7265 2673 50  0000 C CNN
+F 2 "" H 7250 2500 50  0001 C CNN
+F 3 "" H 7250 2500 50  0001 C CNN
+	1    7250 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FBB3445
+P 7550 2500
+AR Path="/5FA6C6C8/5FBB3445" Ref="R?"  Part="1" 
+AR Path="/5FA6C89B/5FBB3445" Ref="R?"  Part="1" 
+F 0 "R?" H 7618 2546 50  0000 L CNN
+F 1 "1k" H 7618 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7550 2500 50  0001 C CNN
+F 3 "~" H 7550 2500 50  0001 C CNN
+	1    7550 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5FBB344B
+P 7900 2500
+AR Path="/5FA6C6C8/5FBB344B" Ref="D?"  Part="1" 
+AR Path="/5FA6C89B/5FBB344B" Ref="D?"  Part="1" 
+F 0 "D?" V 7946 2430 50  0000 R CNN
+F 1 "Red" V 7855 2430 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7900 2500 50  0001 C CNN
+F 3 "~" V 7900 2500 50  0001 C CNN
+	1    7900 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7250 2500 7450 2500
+Wire Wire Line
+	7650 2500 7800 2500
+$Comp
+L Device:LED_Small D?
+U 1 1 5FBB3453
+P 7900 2000
+AR Path="/5FA6C6C8/5FBB3453" Ref="D?"  Part="1" 
+AR Path="/5FA6C89B/5FBB3453" Ref="D?"  Part="1" 
+F 0 "D?" V 7946 1930 50  0000 R CNN
+F 1 "Green" V 7855 1930 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7900 2000 50  0001 C CNN
+F 3 "~" V 7900 2000 50  0001 C CNN
+	1    7900 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FBB3459
+P 7550 2000
+AR Path="/5FA6C6C8/5FBB3459" Ref="R?"  Part="1" 
+AR Path="/5FA6C89B/5FBB3459" Ref="R?"  Part="1" 
+F 0 "R?" H 7618 2046 50  0000 L CNN
+F 1 "1k" H 7618 1955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7550 2000 50  0001 C CNN
+F 3 "~" H 7550 2000 50  0001 C CNN
+	1    7550 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FBB345F
+P 7250 2000
+AR Path="/5FA6C89B/5FBB345F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6C6C8/5FBB345F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7250 1850 50  0001 C CNN
+F 1 "+5V" H 7265 2173 50  0000 C CNN
+F 2 "" H 7250 2000 50  0001 C CNN
+F 3 "" H 7250 2000 50  0001 C CNN
+	1    7250 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 2000 7250 2000
+Wire Wire Line
+	7650 2000 7800 2000
+Wire Wire Line
+	8000 2000 8500 2000
+Wire Wire Line
+	8000 2500 8500 2500
 $EndSCHEMATC
