@@ -70,7 +70,7 @@ AR Path="/5FA6C89B/5FB6CCC7" Ref="J?"  Part="1"
 AR Path="/5FA6C6C8/5FB6CCC7" Ref="J12"  Part="1" 
 F 0 "J12" H 5600 3617 50  0000 C CNN
 F 1 "FEMALE" H 5600 3526 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical" H 5550 3400 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 5550 3400 50  0001 C CNN
 F 3 "~" H 5550 3400 50  0001 C CNN
 	1    5550 3400
 	1    0    0    -1  
