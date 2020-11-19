@@ -293,7 +293,7 @@ U 1 1 5FAB1773
 P 7250 2200
 F 0 "F1" V 7045 2200 50  0000 C CNN
 F 1 "Polyfuse_Small" V 7136 2200 50  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7300 2000 50  0001 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7300 2000 50  0001 L CNN
 F 3 "~" H 7250 2200 50  0001 C CNN
 	1    7250 2200
 	0    1    1    0   
