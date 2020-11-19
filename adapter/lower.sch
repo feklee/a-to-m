@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x01 J5
+L Connector_Generic:Conn_01x01 J7
 U 1 1 5FA6E68E
 P 3650 5550
-F 0 "J5" H 3730 5592 50  0000 L CNN
+F 0 "J7" H 3730 5592 50  0000 L CNN
 F 1 "DTR" H 3730 5501 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3650 5550 50  0001 C CNN
 F 3 "~" H 3650 5550 50  0001 C CNN
@@ -498,10 +498,10 @@ Wire Wire Line
 	1550 5400 1550 5500
 Connection ~ 1550 5500
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J3
+L Connector:USB_C_Receptacle_USB2.0 J6
 U 1 1 5FBA90B8
 P 1550 4500
-F 0 "J3" H 1657 5367 50  0000 C CNN
+F 0 "J6" H 1657 5367 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1657 5276 50  0000 C CNN
 F 2 "node:SOFNG_MC-311D" H 1700 4500 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1700 4500 50  0001 C CNN
@@ -560,4 +560,40 @@ Wire Wire Line
 	1200 2200 1200 2450
 Wire Wire Line
 	1650 2200 1650 2450
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5FB8A10A
+P 3700 3000
+F 0 "J3" H 3780 3042 50  0000 L CNN
+F 1 "Conn_01x01" H 3780 2951 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3700 3000 50  0001 C CNN
+F 3 "~" H 3700 3000 50  0001 C CNN
+	1    3700 3000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3500 3000
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5FB8C43D
+P 3700 3300
+F 0 "J4" H 3780 3342 50  0000 L CNN
+F 1 "Conn_01x01" H 3780 3251 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3700 3300 50  0001 C CNN
+F 3 "~" H 3700 3300 50  0001 C CNN
+	1    3700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5FB8C4F1
+P 3700 3600
+F 0 "J5" H 3780 3642 50  0000 L CNN
+F 1 "Conn_01x01" H 3780 3551 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3700 3600 50  0001 C CNN
+F 3 "~" H 3700 3600 50  0001 C CNN
+	1    3700 3600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3500 3300
+NoConn ~ 3500 3600
 $EndSCHEMATC

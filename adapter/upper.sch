@@ -95,4 +95,46 @@ Wire Wire Line
 	5250 3000 5250 3400
 Wire Wire Line
 	5250 3400 5350 3400
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5FB93146
+P 7200 2900
+AR Path="/5FA6C89B/5FB93146" Ref="J?"  Part="1" 
+AR Path="/5FA6C6C8/5FB93146" Ref="J13"  Part="1" 
+F 0 "J13" H 7280 2942 50  0000 L CNN
+F 1 "Conn_01x01" H 7280 2851 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7200 2900 50  0001 C CNN
+F 3 "~" H 7200 2900 50  0001 C CNN
+	1    7200 2900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7000 2900
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5FB9314D
+P 7200 3200
+AR Path="/5FA6C89B/5FB9314D" Ref="J?"  Part="1" 
+AR Path="/5FA6C6C8/5FB9314D" Ref="J14"  Part="1" 
+F 0 "J14" H 7280 3242 50  0000 L CNN
+F 1 "Conn_01x01" H 7280 3151 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7200 3200 50  0001 C CNN
+F 3 "~" H 7200 3200 50  0001 C CNN
+	1    7200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5FB93153
+P 7200 3500
+AR Path="/5FA6C89B/5FB93153" Ref="J?"  Part="1" 
+AR Path="/5FA6C6C8/5FB93153" Ref="J15"  Part="1" 
+F 0 "J15" H 7280 3542 50  0000 L CNN
+F 1 "Conn_01x01" H 7280 3451 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7200 3500 50  0001 C CNN
+F 3 "~" H 7200 3500 50  0001 C CNN
+	1    7200 3500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7000 3200
+NoConn ~ 7000 3500
 $EndSCHEMATC
