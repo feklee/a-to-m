@@ -134,7 +134,6 @@ F 3 "~" H 8700 3000 50  0001 C CNN
 	1    8700 3000
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8500 3000
 $Comp
 L power:+5V #PWR?
 U 1 1 5FBB343F
@@ -225,4 +224,19 @@ Wire Wire Line
 	8000 2000 8500 2000
 Wire Wire Line
 	8000 2500 8500 2500
+$Comp
+L power:+5V #PWR?
+U 1 1 5FC055F4
+P 7250 3000
+AR Path="/5FA6C89B/5FC055F4" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6C6C8/5FC055F4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7250 2850 50  0001 C CNN
+F 1 "+5V" H 7265 3173 50  0000 C CNN
+F 2 "" H 7250 3000 50  0001 C CNN
+F 3 "" H 7250 3000 50  0001 C CNN
+	1    7250 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7250 3000 8500 3000
 $EndSCHEMATC

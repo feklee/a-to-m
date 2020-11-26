@@ -370,7 +370,6 @@ F 3 "~" H 3700 3600 50  0001 C CNN
 	1    3700 3600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3500 3600
 $Comp
 L Connector_Generic:Conn_01x01 J4
 U 1 1 5FB8C43D
@@ -547,4 +546,17 @@ Wire Wire Line
 	3250 4150 3250 4200
 Text Label 3500 4150 0    50   ~ 0
 VBUS
+$Comp
+L node:+5VB #PWR?
+U 1 1 5FC06065
+P 3050 3600
+F 0 "#PWR?" H 3050 3450 50  0001 C CNN
+F 1 "+5VB" H 3065 3773 50  0000 C CNN
+F 2 "" H 3050 3600 50  0001 C CNN
+F 3 "" H 3050 3600 50  0001 C CNN
+	1    3050 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 3600 3500 3600
 $EndSCHEMATC
