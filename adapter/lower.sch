@@ -508,23 +508,12 @@ F 3 "" H 3750 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R3
-U 1 1 5FBF7BD1
-P 2950 4100
-F 0 "R3" V 2850 3950 50  0000 C CNN
-F 1 "56k" V 2850 4100 50  0000 C CNN
-F 2 "" H 2950 4100 50  0001 C CNN
-F 3 "~" H 2950 4100 50  0001 C CNN
-	1    2950 4100
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Small_US R4
 U 1 1 5FBF7F1F
 P 2950 4200
 F 0 "R4" V 3050 4050 50  0000 C CNN
 F 1 "56k" V 3050 4200 50  0000 C CNN
-F 2 "" H 2950 4200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2950 4200 50  0001 C CNN
 F 3 "~" H 2950 4200 50  0001 C CNN
 	1    2950 4200
 	0    1    1    0   
@@ -536,16 +525,27 @@ Wire Wire Line
 Wire Wire Line
 	3050 4100 3250 4100
 Wire Wire Line
-	3250 4100 3250 4150
-Wire Wire Line
 	3250 4200 3050 4200
 Wire Wire Line
 	3500 4150 3250 4150
-Connection ~ 3250 4150
+Wire Wire Line
+	3250 4100 3250 4150
 Wire Wire Line
 	3250 4150 3250 4200
+Connection ~ 3250 4150
 Text Label 3500 4150 0    50   ~ 0
 VBUS
+$Comp
+L Device:R_Small_US R3
+U 1 1 5FBF7BD1
+P 2950 4100
+F 0 "R3" V 2850 3950 50  0000 C CNN
+F 1 "56k" V 2850 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2950 4100 50  0001 C CNN
+F 3 "~" H 2950 4100 50  0001 C CNN
+	1    2950 4100
+	0    1    1    0   
+$EndComp
 $Comp
 L node:+5VB #PWR0101
 U 1 1 5FC06065
