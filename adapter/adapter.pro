@@ -1,4 +1,4 @@
-update=11/25/2020 6:22:07 PM
+update=12/3/2020 6:22:45 PM
 version=1
 last_client=kicad
 [general]
@@ -244,7 +244,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=C:/Users/Felix/Desktop/Can be Deleted/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
