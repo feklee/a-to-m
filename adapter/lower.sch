@@ -176,18 +176,6 @@ TXD
 Text Label 8800 3100 0    50   ~ 0
 RXD
 Wire Wire Line
-	2900 1150 2550 1150
-Wire Wire Line
-	2550 1150 2550 1750
-Wire Wire Line
-	3750 1750 3750 1800
-Wire Wire Line
-	3400 1250 3500 1250
-Text Label 3500 1250 0    50   ~ 0
-TXD
-Text Label 2800 1250 2    50   ~ 0
-RXD
-Wire Wire Line
 	8650 4000 8800 4000
 Wire Wire Line
 	8650 4100 8800 4100
@@ -222,19 +210,6 @@ F 3 "~" H 7250 2200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J?
-U 1 1 5FA6D1B6
-P 3100 1150
-AR Path="/5FA6D1B6" Ref="J?"  Part="1" 
-AR Path="/5FA6C89B/5FA6D1B6" Ref="J1"  Part="1" 
-F 0 "J1" H 3150 1367 50  0000 C CNN
-F 1 "MALE" H 3150 1276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 3100 1150 50  0001 C CNN
-F 3 "~" H 3100 1150 50  0001 C CNN
-	1    3100 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x02_Odd_Even J?
 U 1 1 5FA83015
 P 3100 1650
@@ -248,22 +223,9 @@ F 3 "~" H 3100 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 1750 3750 1750
-Wire Wire Line
 	3400 1650 3500 1650
 Wire Wire Line
-	3500 1250 3500 1650
-Wire Wire Line
-	3400 1150 3750 1150
-Wire Wire Line
-	3750 1150 3750 1750
-Connection ~ 3750 1750
-Wire Wire Line
-	2900 1250 2800 1250
-Wire Wire Line
 	2550 1750 2900 1750
-Wire Wire Line
-	2800 1250 2800 1650
 Wire Wire Line
 	2800 1650 2900 1650
 Wire Wire Line
@@ -392,20 +354,6 @@ F 3 "~" H 3700 3000 50  0001 C CNN
 	1    3700 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L node:+5VB #PWR04
-U 1 1 5FBBDFD6
-P 2550 1100
-F 0 "#PWR04" H 2550 950 50  0001 C CNN
-F 1 "+5VB" H 2565 1273 50  0000 C CNN
-F 2 "" H 2550 1100 50  0001 C CNN
-F 3 "" H 2550 1100 50  0001 C CNN
-	1    2550 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 1100 2550 1150
-Connection ~ 2550 1150
 Wire Wire Line
 	1200 2200 1200 2450
 $Comp
@@ -496,28 +444,6 @@ F 3 "" H 6650 3050 50  0001 C CNN
 	1    6650 3050
 	1    0    0    -1  
 $EndComp
-$Comp
-L node:GNDB #PWR05
-U 1 1 5FBC21C4
-P 3750 1800
-F 0 "#PWR05" H 3750 1550 50  0001 C CNN
-F 1 "GNDB" H 3755 1627 50  0000 C CNN
-F 2 "" H 3750 1800 50  0001 C CNN
-F 3 "" H 3750 1800 50  0001 C CNN
-	1    3750 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R4
-U 1 1 5FBF7F1F
-P 2950 4200
-F 0 "R4" V 3050 4050 50  0000 C CNN
-F 1 "5.1k" V 3050 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2950 4200 50  0001 C CNN
-F 3 "~" H 2950 4200 50  0001 C CNN
-	1    2950 4200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2150 4100 2850 4100
 Wire Wire Line
@@ -534,17 +460,6 @@ Wire Wire Line
 	3250 4150 3250 4200
 Connection ~ 3250 4150
 $Comp
-L Device:R_Small_US R3
-U 1 1 5FBF7BD1
-P 2950 4100
-F 0 "R3" V 2850 3950 50  0000 C CNN
-F 1 "5.1k" V 2850 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2950 4100 50  0001 C CNN
-F 3 "~" H 2950 4100 50  0001 C CNN
-	1    2950 4100
-	0    1    1    0   
-$EndComp
-$Comp
 L node:+5VB #PWR0101
 U 1 1 5FC06065
 P 3050 3600
@@ -558,16 +473,90 @@ $EndComp
 Wire Wire Line
 	3050 3600 3500 3600
 $Comp
-L node:GNDB #PWR?
-U 1 1 5FCA171C
-P 3500 4200
-F 0 "#PWR?" H 3500 3950 50  0001 C CNN
-F 1 "GNDB" H 3505 4027 50  0000 C CNN
-F 2 "" H 3500 4200 50  0001 C CNN
-F 3 "" H 3500 4200 50  0001 C CNN
-	1    3500 4200
+L node:+5VB #PWR04
+U 1 1 5FBBDFD6
+P 2550 1100
+F 0 "#PWR04" H 2550 950 50  0001 C CNN
+F 1 "+5VB" H 2565 1273 50  0000 C CNN
+F 2 "" H 2550 1100 50  0001 C CNN
+F 3 "" H 2550 1100 50  0001 C CNN
+	1    2550 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 4200 3500 4150
+	3750 1750 3750 1800
+Wire Wire Line
+	2800 1250 2800 1650
+Wire Wire Line
+	2900 1250 2800 1250
+Connection ~ 3750 1750
+Wire Wire Line
+	3750 1150 3750 1750
+Wire Wire Line
+	3400 1150 3750 1150
+Wire Wire Line
+	3500 1250 3500 1650
+Wire Wire Line
+	3400 1250 3500 1250
+Wire Wire Line
+	2550 1100 2550 1150
+Wire Wire Line
+	2550 1150 2550 1750
+Connection ~ 2550 1150
+Wire Wire Line
+	2900 1150 2550 1150
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J?
+U 1 1 5FA6D1B6
+P 3100 1150
+AR Path="/5FA6D1B6" Ref="J?"  Part="1" 
+AR Path="/5FA6C89B/5FA6D1B6" Ref="J1"  Part="1" 
+F 0 "J1" H 3150 1367 50  0000 C CNN
+F 1 "MALE" H 3150 1276 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 3100 1150 50  0001 C CNN
+F 3 "~" H 3100 1150 50  0001 C CNN
+	1    3100 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1750 3750 1750
+$Comp
+L node:GNDB #PWR05
+U 1 1 5FBC21C4
+P 3750 1800
+F 0 "#PWR05" H 3750 1550 50  0001 C CNN
+F 1 "GNDB" H 3755 1627 50  0000 C CNN
+F 2 "" H 3750 1800 50  0001 C CNN
+F 3 "" H 3750 1800 50  0001 C CNN
+	1    3750 1800
+	1    0    0    -1  
+$EndComp
+Text Label 2800 1250 2    50   ~ 0
+RXD
+Text Label 3500 1250 0    50   ~ 0
+TXD
+$Comp
+L Device:R_Small_US R4
+U 1 1 5FBF7F1F
+P 2950 4200
+F 0 "R4" V 3050 4050 50  0000 C CNN
+F 1 "56k" V 3050 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2950 4200 50  0001 C CNN
+F 3 "~" H 2950 4200 50  0001 C CNN
+	1    2950 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 5FBF7BD1
+P 2950 4100
+F 0 "R3" V 2850 3950 50  0000 C CNN
+F 1 "56k" V 2850 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2950 4100 50  0001 C CNN
+F 3 "~" H 2950 4100 50  0001 C CNN
+	1    2950 4100
+	0    1    1    0   
+$EndComp
+Text Label 3500 4150 0    50   ~ 0
+VBUS
 $EndSCHEMATC
