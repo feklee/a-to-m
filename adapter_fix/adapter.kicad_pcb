@@ -151,7 +151,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal (layer B.Cu) (tedit 59FED5CB) (tstamp 5FB6BCA4)
-    (at 158.104 100.27 180)
+    (at 158.104 97.73 180)
     (descr "Through hole angled pin header, 2x02, 2.54mm pitch, 6mm pin length, double rows")
     (tags "Through hole angled pin header THT 2x02 2.54mm double row")
     (path /5FA6C6C8/5FB6CCC1)
@@ -228,7 +228,7 @@
   )
 
   (module Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal (layer F.Cu) (tedit 5A19A41C) (tstamp 5FB65AC1)
-    (at 164.2 106.27)
+    (at 164.2 103.73)
     (descr "Through hole angled socket strip, 2x02, 2.54mm pitch, 8.51mm socket length, double cols (from Kicad 4.0.7), script generated")
     (tags "Through hole angled socket strip THT 2x02 2.54mm double row")
     (path /5FA6C6C8/5FB6CCC7)
@@ -567,7 +567,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal (layer B.Cu) (tedit 59FED5CB) (tstamp 5FCB65DD)
-    (at 158.104 112.27 180)
+    (at 158.104 109.73 180)
     (descr "Through hole angled pin header, 2x02, 2.54mm pitch, 6mm pin length, double rows")
     (tags "Through hole angled pin header THT 2x02 2.54mm double row")
     (path /5FA6C6C8/5FCC3ECF)
