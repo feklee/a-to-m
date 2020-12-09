@@ -118,9 +118,9 @@ Wire Wire Line
 NoConn ~ 5550 2850
 NoConn ~ 6350 2850
 NoConn ~ 7150 2850
-Text Label 1300 1250 2    50   ~ 0
+Text Label 1300 1200 2    50   ~ 0
 TX1_TXO
-Text Label 2000 1250 0    50   ~ 0
+Text Label 1300 1300 2    50   ~ 0
 RX1_RXI
 Text Label 3950 3150 2    50   ~ 0
 DIN
@@ -168,11 +168,11 @@ Wire Wire Line
 	2450 4800 2100 4800
 Wire Wire Line
 	2100 4700 2450 4700
-Text Label 5300 1250 2    50   ~ 0
+Text Label 4300 1200 2    50   ~ 0
 TX3
-Text Label 7300 1250 2    50   ~ 0
+Text Label 5800 1200 2    50   ~ 0
 TX4
-Text Label 8000 1250 0    50   ~ 0
+Text Label 5800 1300 2    50   ~ 0
 RX4
 Wire Wire Line
 	2450 4900 2100 4900
@@ -200,14 +200,14 @@ Wire Notes Line
 Text Notes 3750 2500 0    50   ~ 0
 LEDs
 Wire Notes Line
-	8700 2200 8700 700 
+	6750 1650 6750 850 
 Wire Notes Line
-	8700 700  600  700 
+	6750 850  750  850 
 Wire Notes Line
-	600  700  600  2200
+	750  850  750  1650
 Wire Notes Line
-	600  2200 8700 2200
-Text Notes 600  650  0    50   ~ 0
+	750  1650 6750 1650
+Text Notes 750  800  0    50   ~ 0
 Connectors
 Wire Wire Line
 	2450 5900 2100 5900
@@ -487,48 +487,18 @@ F 7 "0402" H 2550 4700 50  0001 C CNN "Package"
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J1
-U 1 1 5F70B9A8
-P 1600 1150
-F 0 "J1" H 1650 1367 50  0000 C CNN
-F 1 "MALE" H 1650 1276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 1600 1150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 1600 1150 50  0001 C CNN
-F 4 "C239333" H 1600 1150 50  0001 C CNN "LCSC Part"
-F 5 "A2541WR-2x2P" H 1600 1150 50  0001 C CNN "MPN"
-F 6 "CJT(Changjiang Connectors)" H 1600 1150 50  0001 C CNN "Manufacturer"
-F 7 "False" H 1600 1150 50  0001 C CNN "JLCPCB BOM"
-	1    1600 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J8
+L Connector_Generic:Conn_02x02_Top_Bottom J8
 U 1 1 5F7A97CA
-P 7600 1650
-F 0 "J8" H 7650 1867 50  0000 C CNN
-F 1 "FEMALE" H 7650 1776 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 7600 1650 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 7600 1650 50  0001 C CNN
-F 4 "C239353" H 7600 1650 50  0001 C CNN "LCSC Part"
-F 5 "A2541HWR-2x2P" H 7600 1650 50  0001 C CNN "MPN"
-F 6 "CJT(Changjiang Connectors)" H 7600 1650 50  0001 C CNN "Manufacturer"
-F 7 "False" H 7600 1650 50  0001 C CNN "JLCPCB BOM"
-	1    7600 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J7
-U 1 1 5F7A97E4
-P 7600 1150
-F 0 "J7" H 7650 1367 50  0000 C CNN
-F 1 "MALE" H 7650 1276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 7600 1150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 7600 1150 50  0001 C CNN
-F 4 "C239333" H 7600 1150 50  0001 C CNN "LCSC Part"
-F 5 "A2541WR-2x2P" H 7600 1150 50  0001 C CNN "MPN"
-F 6 "CJT(Changjiang Connectors)" H 7600 1150 50  0001 C CNN "Manufacturer"
-F 7 "False" H 7600 1150 50  0001 C CNN "JLCPCB BOM"
-	1    7600 1150
+P 6100 1200
+F 0 "J8" H 6150 1417 50  0000 C CNN
+F 1 "FEMALE" H 6150 1326 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 6100 1200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 6100 1200 50  0001 C CNN
+F 4 "C239353" H 6100 1200 50  0001 C CNN "LCSC Part"
+F 5 "A2541HWR-2x2P" H 6100 1200 50  0001 C CNN "MPN"
+F 6 "CJT(Changjiang Connectors)" H 6100 1200 50  0001 C CNN "Manufacturer"
+F 7 "False" H 6100 1200 50  0001 C CNN "JLCPCB BOM"
+	1    6100 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -746,34 +716,23 @@ $EndComp
 $Comp
 L node:GNDB #PWR0106
 U 1 1 5F87589B
-P 2400 1750
-F 0 "#PWR0106" H 2400 1500 50  0001 C CNN
-F 1 "GNDB" H 2405 1577 50  0000 C CNN
-F 2 "" H 2400 1750 50  0001 C CNN
-F 3 "" H 2400 1750 50  0001 C CNN
-	1    2400 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L node:GNDB #PWR0109
-U 1 1 5F87CC7C
-P 6400 1750
-F 0 "#PWR0109" H 6400 1500 50  0001 C CNN
-F 1 "GNDB" H 6405 1577 50  0000 C CNN
-F 2 "" H 6400 1750 50  0001 C CNN
-F 3 "" H 6400 1750 50  0001 C CNN
-	1    6400 1750
+P 2000 1300
+F 0 "#PWR0106" H 2000 1050 50  0001 C CNN
+F 1 "GNDB" H 2005 1127 50  0000 C CNN
+F 2 "" H 2000 1300 50  0001 C CNN
+F 3 "" H 2000 1300 50  0001 C CNN
+	1    2000 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L node:GNDB #PWR0110
 U 1 1 5F87CD89
-P 8400 1750
-F 0 "#PWR0110" H 8400 1500 50  0001 C CNN
-F 1 "GNDB" H 8405 1577 50  0000 C CNN
-F 2 "" H 8400 1750 50  0001 C CNN
-F 3 "" H 8400 1750 50  0001 C CNN
-	1    8400 1750
+P 6500 1300
+F 0 "#PWR0110" H 6500 1050 50  0001 C CNN
+F 1 "GNDB" H 6505 1127 50  0000 C CNN
+F 2 "" H 6500 1300 50  0001 C CNN
+F 3 "" H 6500 1300 50  0001 C CNN
+	1    6500 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1138,23 +1097,23 @@ https://electronics.stackexchange.com/q/527338/21817
 $Comp
 L node:+5VB #PWR0113
 U 1 1 5FA33707
-P 4900 1150
-F 0 "#PWR0113" H 4900 1000 50  0001 C CNN
-F 1 "+5VB" H 4915 1323 50  0000 C CNN
-F 2 "" H 4900 1150 50  0001 C CNN
-F 3 "" H 4900 1150 50  0001 C CNN
-	1    4900 1150
+P 5000 1200
+F 0 "#PWR0113" H 5000 1050 50  0001 C CNN
+F 1 "+5VB" H 5015 1373 50  0000 C CNN
+F 2 "" H 5000 1200 50  0001 C CNN
+F 3 "" H 5000 1200 50  0001 C CNN
+	1    5000 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L node:+5VB #PWR0115
 U 1 1 5FA3382A
-P 6900 1150
-F 0 "#PWR0115" H 6900 1000 50  0001 C CNN
-F 1 "+5VB" H 6915 1323 50  0000 C CNN
-F 2 "" H 6900 1150 50  0001 C CNN
-F 3 "" H 6900 1150 50  0001 C CNN
-	1    6900 1150
+P 6500 1200
+F 0 "#PWR0115" H 6500 1050 50  0001 C CNN
+F 1 "+5VB" H 6515 1373 50  0000 C CNN
+F 2 "" H 6500 1200 50  0001 C CNN
+F 3 "" H 6500 1200 50  0001 C CNN
+	1    6500 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1191,226 +1150,99 @@ F 7 "2010" H 8500 4650 50  0001 C CNN "Package"
 $EndComp
 Wire Wire Line
 	8500 4550 8500 4400
-Text Notes 8700 650  2    50   ~ 0
-1234 in 3D model: male YBRG, female BGYR
 $Comp
 L node:+5VB #PWR0107
 U 1 1 5FA333FF
-P 900 1150
-F 0 "#PWR0107" H 900 1000 50  0001 C CNN
-F 1 "+5VB" H 915 1323 50  0000 C CNN
-F 2 "" H 900 1150 50  0001 C CNN
-F 3 "" H 900 1150 50  0001 C CNN
-	1    900  1150
+P 2000 1200
+F 0 "#PWR0107" H 2000 1050 50  0001 C CNN
+F 1 "+5VB" H 2015 1373 50  0000 C CNN
+F 2 "" H 2000 1200 50  0001 C CNN
+F 3 "" H 2000 1200 50  0001 C CNN
+	1    2000 1200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J3
-U 1 1 5F79368C
-P 3600 1150
-F 0 "J3" H 3650 1367 50  0000 C CNN
-F 1 "MALE" H 3650 1276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 3600 1150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 3600 1150 50  0001 C CNN
-F 4 "C239333" H 3600 1150 50  0001 C CNN "LCSC Part"
-F 5 "A2541WR-2x2P" H 3600 1150 50  0001 C CNN "MPN"
-F 6 "CJT(Changjiang Connectors)" H 3600 1150 50  0001 C CNN "Manufacturer"
-F 7 "False" H 3600 1150 50  0001 C CNN "JLCPCB BOM"
-	1    3600 1150
-	1    0    0    -1  
-$EndComp
-Text Label 3300 1250 2    50   ~ 0
+Text Label 2800 1200 2    50   ~ 0
 TX2
 $Comp
 L node:+5VB #PWR0108
 U 1 1 5FA864A5
-P 2900 1150
-F 0 "#PWR0108" H 2900 1000 50  0001 C CNN
-F 1 "+5VB" H 2915 1323 50  0000 C CNN
-F 2 "" H 2900 1150 50  0001 C CNN
-F 3 "" H 2900 1150 50  0001 C CNN
-	1    2900 1150
+P 3500 1200
+F 0 "#PWR0108" H 3500 1050 50  0001 C CNN
+F 1 "+5VB" H 3515 1373 50  0000 C CNN
+F 2 "" H 3500 1200 50  0001 C CNN
+F 3 "" H 3500 1200 50  0001 C CNN
+	1    3500 1200
 	1    0    0    -1  
 $EndComp
-Text Label 4000 1250 0    50   ~ 0
+Text Label 2800 1300 2    50   ~ 0
 RX2
 $Comp
 L node:GNDB #PWR0111
 U 1 1 5FA86F88
-P 4400 1750
-F 0 "#PWR0111" H 4400 1500 50  0001 C CNN
-F 1 "GNDB" H 4405 1577 50  0000 C CNN
-F 2 "" H 4400 1750 50  0001 C CNN
-F 3 "" H 4400 1750 50  0001 C CNN
-	1    4400 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 1250 1300 1250
-Wire Wire Line
-	1900 1250 2000 1250
-$Comp
-L Connector_Generic:Conn_02x02_Odd_Even J2
-U 1 1 5F70A5DD
-P 1600 1650
-F 0 "J2" H 1650 1867 50  0000 C CNN
-F 1 "FEMALE" H 1650 1776 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 1600 1650 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 1600 1650 50  0001 C CNN
-F 4 "C239353" H 1600 1650 50  0001 C CNN "LCSC Part"
-F 5 "A2541HWR-2x2P" H 1600 1650 50  0001 C CNN "MPN"
-F 6 "CJT(Changjiang Connectors)" H 1600 1650 50  0001 C CNN "Manufacturer"
-F 7 "False" H 1600 1650 50  0001 C CNN "JLCPCB BOM"
-	1    1600 1650
+P 3500 1300
+F 0 "#PWR0111" H 3500 1050 50  0001 C CNN
+F 1 "GNDB" H 3505 1127 50  0000 C CNN
+F 2 "" H 3500 1300 50  0001 C CNN
+F 3 "" H 3500 1300 50  0001 C CNN
+	1    3500 1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x02_Odd_Even J4
+L Connector_Generic:Conn_02x02_Top_Bottom J4
 U 1 1 5F793672
-P 3600 1650
-F 0 "J4" H 3650 1867 50  0000 C CNN
-F 1 "FEMALE" H 3650 1776 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 3600 1650 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 3600 1650 50  0001 C CNN
-F 4 "C239353" H 3600 1650 50  0001 C CNN "LCSC Part"
-F 5 "A2541HWR-2x2P" H 3600 1650 50  0001 C CNN "MPN"
-F 6 "CJT(Changjiang Connectors)" H 3600 1650 50  0001 C CNN "Manufacturer"
-F 7 "False" H 3600 1650 50  0001 C CNN "JLCPCB BOM"
-	1    3600 1650
+P 3100 1200
+F 0 "J4" H 3150 1417 50  0000 C CNN
+F 1 "FEMALE" H 3150 1326 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 3100 1200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 3100 1200 50  0001 C CNN
+F 4 "C239353" H 3100 1200 50  0001 C CNN "LCSC Part"
+F 5 "A2541HWR-2x2P" H 3100 1200 50  0001 C CNN "MPN"
+F 6 "CJT(Changjiang Connectors)" H 3100 1200 50  0001 C CNN "Manufacturer"
+F 7 "False" H 3100 1200 50  0001 C CNN "JLCPCB BOM"
+	1    3100 1200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x02_Odd_Even J6
+L Connector_Generic:Conn_02x02_Top_Bottom J6
 U 1 1 5F7A978A
-P 5600 1650
-F 0 "J6" H 5650 1867 50  0000 C CNN
-F 1 "FEMALE" H 5650 1776 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 5600 1650 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 5600 1650 50  0001 C CNN
-F 4 "C239353" H 5600 1650 50  0001 C CNN "LCSC Part"
-F 5 "A2541HWR-2x2P" H 5600 1650 50  0001 C CNN "MPN"
-F 6 "CJT(Changjiang Connectors)" H 5600 1650 50  0001 C CNN "Manufacturer"
-F 7 "False" H 5600 1650 50  0001 C CNN "JLCPCB BOM"
-	1    5600 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J5
-U 1 1 5F7A97A4
-P 5600 1150
-F 0 "J5" H 5650 1367 50  0000 C CNN
-F 1 "MALE" H 5650 1276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 5600 1150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 5600 1150 50  0001 C CNN
-F 4 "C239333" H 5600 1150 50  0001 C CNN "LCSC Part"
-F 5 "A2541WR-2x2P" H 5600 1150 50  0001 C CNN "MPN"
-F 6 "CJT(Changjiang Connectors)" H 5600 1150 50  0001 C CNN "Manufacturer"
-F 7 "False" H 5600 1150 50  0001 C CNN "JLCPCB BOM"
-	1    5600 1150
+P 4600 1200
+F 0 "J6" H 4650 1417 50  0000 C CNN
+F 1 "FEMALE" H 4650 1326 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 4600 1200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 4600 1200 50  0001 C CNN
+F 4 "C239353" H 4600 1200 50  0001 C CNN "LCSC Part"
+F 5 "A2541HWR-2x2P" H 4600 1200 50  0001 C CNN "MPN"
+F 6 "CJT(Changjiang Connectors)" H 4600 1200 50  0001 C CNN "Manufacturer"
+F 7 "False" H 4600 1200 50  0001 C CNN "JLCPCB BOM"
+	1    4600 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 1250 5300 1250
+	4300 1200 4400 1200
 Wire Wire Line
-	5300 1250 5300 1650
-Wire Wire Line
-	5300 1650 5400 1650
-Wire Wire Line
-	5900 1250 6000 1250
-Wire Wire Line
-	6000 1250 6000 1650
-Wire Wire Line
-	6000 1650 5900 1650
-Wire Wire Line
-	5400 1750 4900 1750
-Wire Wire Line
-	4900 1750 4900 1150
-Wire Wire Line
-	4900 1150 5400 1150
-Wire Wire Line
-	5900 1150 6400 1150
-Wire Wire Line
-	6400 1150 6400 1750
-Wire Wire Line
-	6400 1750 5900 1750
-Connection ~ 4900 1150
-Connection ~ 6400 1750
-Text Label 6000 1250 0    50   ~ 0
+	5000 1200 4900 1200
+Text Label 4300 1300 2    50   ~ 0
 RX3
 Wire Wire Line
-	1900 1150 2400 1150
+	2000 1300 1900 1300
 Wire Wire Line
-	2400 1150 2400 1750
+	1300 1200 1400 1200
 Wire Wire Line
-	2400 1750 1900 1750
+	1900 1200 2000 1200
 Wire Wire Line
-	1400 1150 900  1150
+	3500 1300 3400 1300
 Wire Wire Line
-	900  1150 900  1750
+	3500 1200 3400 1200
 Wire Wire Line
-	900  1750 1400 1750
+	2800 1200 2900 1200
 Wire Wire Line
-	1300 1250 1300 1650
+	2800 1300 2900 1300
 Wire Wire Line
-	1300 1650 1400 1650
-Connection ~ 900  1150
-Connection ~ 2400 1750
+	5800 1200 5900 1200
 Wire Wire Line
-	1900 1650 2000 1650
+	6500 1200 6400 1200
 Wire Wire Line
-	2000 1650 2000 1250
-Wire Wire Line
-	3900 1150 4400 1150
-Wire Wire Line
-	4400 1150 4400 1750
-Wire Wire Line
-	4400 1750 3900 1750
-Wire Wire Line
-	3900 1250 4000 1250
-Wire Wire Line
-	4000 1250 4000 1650
-Wire Wire Line
-	4000 1650 3900 1650
-Connection ~ 4400 1750
-Wire Wire Line
-	3400 1250 3300 1250
-Wire Wire Line
-	3300 1250 3300 1650
-Wire Wire Line
-	3300 1650 3400 1650
-Wire Wire Line
-	3400 1150 2900 1150
-Wire Wire Line
-	2900 1150 2900 1750
-Wire Wire Line
-	2900 1750 3400 1750
-Connection ~ 2900 1150
-Wire Wire Line
-	7400 1250 7300 1250
-Wire Wire Line
-	7300 1250 7300 1650
-Wire Wire Line
-	7300 1650 7400 1650
-Wire Wire Line
-	7900 1250 8000 1250
-Wire Wire Line
-	8000 1250 8000 1650
-Wire Wire Line
-	8000 1650 7900 1650
-Wire Wire Line
-	7900 1150 8400 1150
-Wire Wire Line
-	8400 1150 8400 1750
-Wire Wire Line
-	8400 1750 7900 1750
-Connection ~ 8400 1750
-Wire Wire Line
-	7400 1150 6900 1150
-Wire Wire Line
-	6900 1150 6900 1750
-Wire Wire Line
-	6900 1750 7400 1750
-Connection ~ 6900 1150
+	6500 1300 6400 1300
 $Comp
 L Device:D_Schottky_Small D6
 U 1 1 5FC11A77
@@ -1426,4 +1258,38 @@ Wire Wire Line
 	1550 4150 1550 4350
 Wire Wire Line
 	1550 3950 1550 3800
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J2
+U 1 1 5F70A5DD
+P 1600 1200
+F 0 "J2" H 1650 1417 50  0000 C CNN
+F 1 "FEMALE" H 1650 1326 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 1600 1200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 1600 1200 50  0001 C CNN
+F 4 "C239353" H 1600 1200 50  0001 C CNN "LCSC Part"
+F 5 "A2541HWR-2x2P" H 1600 1200 50  0001 C CNN "MPN"
+F 6 "CJT(Changjiang Connectors)" H 1600 1200 50  0001 C CNN "Manufacturer"
+F 7 "False" H 1600 1200 50  0001 C CNN "JLCPCB BOM"
+	1    1600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1300 1400 1300
+Wire Wire Line
+	5000 1300 4900 1300
+$Comp
+L node:GNDB #PWR0109
+U 1 1 5F87CC7C
+P 5000 1300
+F 0 "#PWR0109" H 5000 1050 50  0001 C CNN
+F 1 "GNDB" H 5005 1127 50  0000 C CNN
+F 2 "" H 5000 1300 50  0001 C CNN
+F 3 "" H 5000 1300 50  0001 C CNN
+	1    5000 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1300 4400 1300
+Wire Wire Line
+	5800 1300 5900 1300
 $EndSCHEMATC
