@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name node)(type Legacy)(uri ${KIPRJMOD}/../node.lib)(options "")(descr ""))
-  (lib (name draft-rescue)(type Legacy)(uri ${KIPRJMOD}/draft-rescue.lib)(options "")(descr ""))
-)
