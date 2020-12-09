@@ -16,9 +16,7 @@ $EndDescr
 Wire Wire Line
 	5350 2900 5150 2900
 Wire Wire Line
-	5150 2900 5150 3500
-Wire Wire Line
-	6050 3500 6050 3550
+	6050 4000 6050 4050
 Wire Wire Line
 	5850 3000 5950 3000
 $Comp
@@ -37,14 +35,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FB6CCB9
-P 6050 3550
+P 6050 4050
 AR Path="/5FA6C89B/5FB6CCB9" Ref="#PWR?"  Part="1" 
 AR Path="/5FA6C6C8/5FB6CCB9" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 6050 3300 50  0001 C CNN
-F 1 "GND" H 6050 3400 50  0000 C CNN
-F 2 "" H 6050 3550 50  0001 C CNN
-F 3 "" H 6050 3550 50  0001 C CNN
-	1    6050 3550
+F 0 "#PWR0111" H 6050 3800 50  0001 C CNN
+F 1 "GND" H 6050 3900 50  0000 C CNN
+F 2 "" H 6050 4050 50  0001 C CNN
+F 3 "" H 6050 4050 50  0001 C CNN
+	1    6050 4050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -64,44 +62,38 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x02_Odd_Even J?
 U 1 1 5FB6CCC7
-P 5550 3400
+P 5550 3900
 AR Path="/5FB6CCC7" Ref="J?"  Part="1" 
 AR Path="/5FA6C89B/5FB6CCC7" Ref="J?"  Part="1" 
 AR Path="/5FA6C6C8/5FB6CCC7" Ref="J12"  Part="1" 
-F 0 "J12" H 5600 3617 50  0000 C CNN
-F 1 "FEMALE" H 5600 3526 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 5550 3400 50  0001 C CNN
-F 3 "~" H 5550 3400 50  0001 C CNN
-	1    5550 3400
+F 0 "J12" H 5600 4117 50  0000 C CNN
+F 1 "FEMALE" H 5600 4026 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 5550 3900 50  0001 C CNN
+F 3 "~" H 5550 3900 50  0001 C CNN
+	1    5550 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 3500 6050 3500
+	5850 4000 6050 4000
 Wire Wire Line
-	5850 3400 5950 3400
-Wire Wire Line
-	5950 3000 5950 3400
+	5850 3900 5950 3900
 Wire Wire Line
 	5850 2900 6050 2900
-Wire Wire Line
-	6050 2900 6050 3500
-Connection ~ 6050 3500
+Connection ~ 6050 4000
 Connection ~ 5150 2900
 Wire Wire Line
 	5350 3000 5250 3000
 Wire Wire Line
-	5150 3500 5350 3500
+	5150 4000 5350 4000
 Wire Wire Line
-	5250 3000 5250 3400
-Wire Wire Line
-	5250 3400 5350 3400
+	5250 3900 5350 3900
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5FB93146
 P 8700 2000
 AR Path="/5FA6C89B/5FB93146" Ref="J?"  Part="1" 
-AR Path="/5FA6C6C8/5FB93146" Ref="J13"  Part="1" 
-F 0 "J13" H 8780 2042 50  0000 L CNN
+AR Path="/5FA6C6C8/5FB93146" Ref="J14"  Part="1" 
+F 0 "J14" H 8780 2042 50  0000 L CNN
 F 1 "STANDOFF" H 8780 1951 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8700 2000 50  0001 C CNN
 F 3 "~" H 8700 2000 50  0001 C CNN
@@ -113,8 +105,8 @@ L Connector_Generic:Conn_01x01 J?
 U 1 1 5FB9314D
 P 8700 2500
 AR Path="/5FA6C89B/5FB9314D" Ref="J?"  Part="1" 
-AR Path="/5FA6C6C8/5FB9314D" Ref="J14"  Part="1" 
-F 0 "J14" H 8780 2542 50  0000 L CNN
+AR Path="/5FA6C6C8/5FB9314D" Ref="J15"  Part="1" 
+F 0 "J15" H 8780 2542 50  0000 L CNN
 F 1 "STANDOFF" H 8780 2451 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8700 2500 50  0001 C CNN
 F 3 "~" H 8700 2500 50  0001 C CNN
@@ -126,8 +118,8 @@ L Connector_Generic:Conn_01x01 J?
 U 1 1 5FB93153
 P 8700 3000
 AR Path="/5FA6C89B/5FB93153" Ref="J?"  Part="1" 
-AR Path="/5FA6C6C8/5FB93153" Ref="J15"  Part="1" 
-F 0 "J15" H 8780 3042 50  0000 L CNN
+AR Path="/5FA6C6C8/5FB93153" Ref="J16"  Part="1" 
+F 0 "J16" H 8780 3042 50  0000 L CNN
 F 1 "STANDOFF" H 8780 2951 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8700 3000 50  0001 C CNN
 F 3 "~" H 8700 3000 50  0001 C CNN
@@ -295,4 +287,46 @@ F 3 "" H 4000 2350 50  0001 C CNN
 	1    4000 2350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J?
+U 1 1 5FCC3ECF
+P 5650 3500
+AR Path="/5FCC3ECF" Ref="J?"  Part="1" 
+AR Path="/5FA6C89B/5FCC3ECF" Ref="J?"  Part="1" 
+AR Path="/5FA6C6C8/5FCC3ECF" Ref="J13"  Part="1" 
+F 0 "J13" H 5700 3717 50  0000 C CNN
+F 1 "MALE" H 5700 3626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 5650 3500 50  0001 C CNN
+F 3 "~" H 5650 3500 50  0001 C CNN
+	1    5650 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 3400 5150 3400
+Wire Wire Line
+	5150 2900 5150 3400
+Wire Wire Line
+	5150 3400 5150 4000
+Connection ~ 5150 3400
+Wire Wire Line
+	5350 3500 5250 3500
+Wire Wire Line
+	5250 3000 5250 3500
+Wire Wire Line
+	5250 3500 5250 3900
+Connection ~ 5250 3500
+Wire Wire Line
+	5850 3400 6050 3400
+Wire Wire Line
+	6050 2900 6050 3400
+Wire Wire Line
+	6050 3400 6050 4000
+Connection ~ 6050 3400
+Wire Wire Line
+	5850 3500 5950 3500
+Wire Wire Line
+	5950 3000 5950 3500
+Wire Wire Line
+	5950 3500 5950 3900
+Connection ~ 5950 3500
 $EndSCHEMATC
