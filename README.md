@@ -1,5 +1,5 @@
-Clover is an experimental construction system for assembling
-electric structures from interlocking leaves.
+A-to-M is an experimental construction system for assembling electric
+structures.
 
 ![Laser cut mockup](mockup.jpg)
 
