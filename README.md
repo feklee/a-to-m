@@ -1,7 +1,8 @@
-A-to-M is an experimental construction system for assembling electric
-structures.
+A-to-M is an experimental construction system: Atoms (*A*) are
+assembled *to* form molecules (*M*).
 
-Atoms (*A*) are assembled *to* form molecules (*M*).
+A molecule is powered with a USB-C adapter. This adapter is also used
+to program individual atoms.
 
 ![Laser cut mockup](mockup.jpg)
 
