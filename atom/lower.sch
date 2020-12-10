@@ -502,7 +502,7 @@ F 7 "False" H 6100 1200 50  0001 C CNN "JLCPCB BOM"
 	1    0    0    -1  
 $EndComp
 $Comp
-L draft-rescue:ATmega328P-MU-MCU_Microchip_ATmega U?
+L MCU_Microchip_ATmega:ATmega328P-MU U?
 U 1 1 5CAD6264
 P 1500 5900
 AR Path="/5CAD6264" Ref="U?"  Part="1" 
