@@ -1,3 +1,6 @@
+Introduction
+============
+
 A-to-M is an experimental construction system: Atoms (*A*) are
 assembled *to* form molecules (*M*).
 
