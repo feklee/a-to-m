@@ -1,6 +1,8 @@
 A-to-M is an experimental construction system for assembling electric
 structures.
 
+Atoms – *A* – are assembled *to* form molecules – *M*.
+
 ![Laser cut mockup](mockup.jpg)
 
 
