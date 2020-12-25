@@ -7,9 +7,9 @@ assembled *to* form molecules (*M*).
 A molecule is powered with a USB-C adapter. This adapter is also used
 to program individual atoms.
 
-![Atomic tree](images/atomic-tree.jpg)
-
 ![Set](images/set.jpg)
+
+![Atomic tree](images/atomic-tree.jpg)
 
 
 Design guidelines
