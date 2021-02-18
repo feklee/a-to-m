@@ -461,8 +461,8 @@ U 1 1 5F6BA377
 P 8700 2950
 AR Path="/5C920754/5F6BA377" Ref="J?"  Part="1" 
 AR Path="/5C920CA4/5F6BA377" Ref="J108"  Part="1" 
-F 0 "J108" H 8750 3167 50  0000 C CNN
-F 1 "FEMALE" H 8750 3076 50  0000 C CNN
+F 0 "J108" H 8750 3550 50  0000 C CNN
+F 1 "FEMALE" H 8750 2750 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 8700 2950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 8700 2950 50  0001 C CNN
 F 4 "C239353" H 8700 2950 50  0001 C CNN "LCSC Part"
@@ -478,8 +478,8 @@ U 1 1 5F6BA361
 P 8700 1950
 AR Path="/5C920754/5F6BA361" Ref="J?"  Part="1" 
 AR Path="/5C920CA4/5F6BA361" Ref="J107"  Part="1" 
-F 0 "J107" H 8750 2167 50  0000 C CNN
-F 1 "MALE" H 8750 2076 50  0000 C CNN
+F 0 "J107" H 8750 2050 50  0000 C CNN
+F 1 "MALE" H 8750 1750 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 8700 1950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 8700 1950 50  0001 C CNN
 F 4 "C239333" H 8700 1950 50  0001 C CNN "LCSC Part"
@@ -495,8 +495,8 @@ U 1 1 5F6B83F9
 P 7200 2950
 AR Path="/5C920754/5F6B83F9" Ref="J?"  Part="1" 
 AR Path="/5C920CA4/5F6B83F9" Ref="J106"  Part="1" 
-F 0 "J106" H 7250 3167 50  0000 C CNN
-F 1 "FEMALE" H 7250 3076 50  0000 C CNN
+F 0 "J106" H 7250 3550 50  0000 C CNN
+F 1 "FEMALE" H 7250 2750 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 7200 2950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 7200 2950 50  0001 C CNN
 F 4 "C239353" H 7200 2950 50  0001 C CNN "LCSC Part"
@@ -512,8 +512,8 @@ U 1 1 5F6B83E3
 P 7200 1950
 AR Path="/5C920754/5F6B83E3" Ref="J?"  Part="1" 
 AR Path="/5C920CA4/5F6B83E3" Ref="J105"  Part="1" 
-F 0 "J105" H 7250 2167 50  0000 C CNN
-F 1 "MALE" H 7250 2076 50  0000 C CNN
+F 0 "J105" H 7250 2050 50  0000 C CNN
+F 1 "MALE" H 7250 1750 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 7200 1950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 7200 1950 50  0001 C CNN
 F 4 "C239333" H 7200 1950 50  0001 C CNN "LCSC Part"
@@ -529,8 +529,8 @@ U 1 1 5F6B6626
 P 5700 2950
 AR Path="/5C920754/5F6B6626" Ref="J?"  Part="1" 
 AR Path="/5C920CA4/5F6B6626" Ref="J104"  Part="1" 
-F 0 "J104" H 5750 3167 50  0000 C CNN
-F 1 "FEMALE" H 5750 3076 50  0000 C CNN
+F 0 "J104" H 5750 3550 50  0000 C CNN
+F 1 "FEMALE" H 5750 2750 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 5700 2950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 5700 2950 50  0001 C CNN
 F 4 "C239353" H 5700 2950 50  0001 C CNN "LCSC Part"
@@ -546,8 +546,8 @@ U 1 1 5F6B6610
 P 5700 1950
 AR Path="/5C920754/5F6B6610" Ref="J?"  Part="1" 
 AR Path="/5C920CA4/5F6B6610" Ref="J103"  Part="1" 
-F 0 "J103" H 5750 2167 50  0000 C CNN
-F 1 "MALE" H 5750 2076 50  0000 C CNN
+F 0 "J103" H 5750 2050 50  0000 C CNN
+F 1 "MALE" H 5750 1750 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 5700 1950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 5700 1950 50  0001 C CNN
 F 4 "C239333" H 5700 1950 50  0001 C CNN "LCSC Part"
@@ -563,8 +563,8 @@ U 1 1 5F6ACD6B
 P 4200 1950
 AR Path="/5C920754/5F6ACD6B" Ref="J?"  Part="1" 
 AR Path="/5C920CA4/5F6ACD6B" Ref="J101"  Part="1" 
-F 0 "J101" H 4250 2167 50  0000 C CNN
-F 1 "MALE" H 4250 2076 50  0000 C CNN
+F 0 "J101" H 4250 2050 50  0000 C CNN
+F 1 "MALE" H 4250 1750 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 4200 1950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 4200 1950 50  0001 C CNN
 F 4 "C239333" H 4200 1950 50  0001 C CNN "LCSC Part"
@@ -584,8 +584,8 @@ U 1 1 5F6ACD85
 P 4200 2950
 AR Path="/5C920754/5F6ACD85" Ref="J?"  Part="1" 
 AR Path="/5C920CA4/5F6ACD85" Ref="J102"  Part="1" 
-F 0 "J102" H 4250 3167 50  0000 C CNN
-F 1 "FEMALE" H 4250 3076 50  0000 C CNN
+F 0 "J102" H 4250 3550 50  0000 C CNN
+F 1 "FEMALE" H 4250 2750 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 4200 2950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120038_CJT-Changjiang-Connectors-A2541HWR-2x2P_C239353.pdf" H 4200 2950 50  0001 C CNN
 F 4 "C239353" H 4200 2950 50  0001 C CNN "LCSC Part"
@@ -601,7 +601,7 @@ U 1 1 5FC96D56
 P 7300 2550
 AR Path="/5C920754/5FC96D56" Ref="J?"  Part="1" 
 AR Path="/5C920CA4/5FC96D56" Ref="J1050"  Part="1" 
-F 0 "J1050" H 7350 2767 50  0000 C CNN
+F 0 "J1050" H 7350 2850 50  0000 C CNN
 F 1 "MALE" H 7350 2676 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 7300 2550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 7300 2550 50  0001 C CNN
@@ -696,28 +696,11 @@ Wire Wire Line
 	3900 2050 3900 2550
 $Comp
 L Connector_Generic:Conn_02x02_Top_Bottom J?
-U 1 1 5FC96738
-P 4300 2550
-AR Path="/5C920754/5FC96738" Ref="J?"  Part="1" 
-AR Path="/5C920CA4/5FC96738" Ref="J1010"  Part="1" 
-F 0 "J1010" H 4350 2767 50  0000 C CNN
-F 1 "MALE" H 4350 2676 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 4300 2550 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 4300 2550 50  0001 C CNN
-F 4 "C239333" H 4300 2550 50  0001 C CNN "LCSC Part"
-F 5 "A2541WR-2x2P" H 4300 2550 50  0001 C CNN "MPN"
-F 6 "CJT(Changjiang Connectors)" H 4300 2550 50  0001 C CNN "Manufacturer"
-F 7 "False" H 4300 2550 50  0001 C CNN "JLCPCB BOM"
-	1    4300 2550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J?
 U 1 1 5FC96F87
 P 8800 2550
 AR Path="/5C920754/5FC96F87" Ref="J?"  Part="1" 
 AR Path="/5C920CA4/5FC96F87" Ref="J1070"  Part="1" 
-F 0 "J1070" H 8850 2767 50  0000 C CNN
+F 0 "J1070" H 8850 2850 50  0000 C CNN
 F 1 "MALE" H 8850 2676 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 8800 2550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 8800 2550 50  0001 C CNN
@@ -734,7 +717,7 @@ U 1 1 5FC96B00
 P 5800 2550
 AR Path="/5C920754/5FC96B00" Ref="J?"  Part="1" 
 AR Path="/5C920CA4/5FC96B00" Ref="J1030"  Part="1" 
-F 0 "J1030" H 5850 2767 50  0000 C CNN
+F 0 "J1030" H 5850 2850 50  0000 C CNN
 F 1 "MALE" H 5850 2676 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 5800 2550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 5800 2550 50  0001 C CNN
@@ -743,6 +726,23 @@ F 5 "A2541WR-2x2P" H 5800 2550 50  0001 C CNN "MPN"
 F 6 "CJT(Changjiang Connectors)" H 5800 2550 50  0001 C CNN "Manufacturer"
 F 7 "False" H 5800 2550 50  0001 C CNN "JLCPCB BOM"
 	1    5800 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Top_Bottom J?
+U 1 1 5FC96738
+P 4300 2550
+AR Path="/5C920754/5FC96738" Ref="J?"  Part="1" 
+AR Path="/5C920CA4/5FC96738" Ref="J1010"  Part="1" 
+F 0 "J1010" H 4350 2850 50  0000 C CNN
+F 1 "MALE" H 4350 2676 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 4300 2550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2008120037_CJT-Changjiang-Connectors-A2541WR-2x2P_C239333.pdf" H 4300 2550 50  0001 C CNN
+F 4 "C239333" H 4300 2550 50  0001 C CNN "LCSC Part"
+F 5 "A2541WR-2x2P" H 4300 2550 50  0001 C CNN "MPN"
+F 6 "CJT(Changjiang Connectors)" H 4300 2550 50  0001 C CNN "Manufacturer"
+F 7 "False" H 4300 2550 50  0001 C CNN "JLCPCB BOM"
+	1    4300 2550
 	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
