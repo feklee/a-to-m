@@ -19,13 +19,9 @@ constexpr uint8_t communicationPinNos[] = {
 
 constexpr uint8_t speakerPinNo = 3;
 
-#define LED_PIN     4
-#define NUM_LEDS    4
-#define BRIGHTNESS  255
-#define LED_TYPE    WS2813
-#define COLOR_ORDER GRB
-CRGB leds[NUM_LEDS];
-uint8_t hues[NUM_LEDS];
+constexpr uint8_t ledPinNo = 4;
+CRGB leds[4];
+
 volatile bool pulseHasBeenReceived = false;
 volatile uint8_t commPinThatReceivedPulse;
 
@@ -291,9 +287,9 @@ void debounceButtons() {
 }
 
 void setup() {
-  FastLED.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS).
+  FastLED.addLeds<WS2813, ledPinNo, GRB>(leds, 4).
     setCorrection(TypicalLEDStrip);
-  FastLED.setBrightness(BRIGHTNESS);
+  FastLED.setBrightness(255);
   showStatusWithLeds();
 
   debounceButtons();
