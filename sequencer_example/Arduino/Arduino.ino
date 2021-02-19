@@ -58,9 +58,9 @@ uint16_t frequencies[noOfNotes] = {
 };
 uint8_t selectedNote = 7;
 
-constexpr uint8_t noOfWaveForms = 2;
+constexpr uint8_t noOfWaveForms = 3;
 struct {
-  enum {silent, square};
+  enum {silent, square, noise};
 } waveForms;
 uint8_t selectedWaveForm = waveForms.square;
 
@@ -74,6 +74,8 @@ ezButton buttons[] = {
   {buttonPinNos[2]},
   {buttonPinNos[3]}
 };
+
+uint16_t toggleCount;
 
 void blinkLed(uint8_t i) {
   leds[i].setHSV(255, 0, 255);
@@ -98,7 +100,7 @@ uint8_t nextNote() {
 }
 
 uint8_t nextWaveForm() {
-  return (selectedWaveForm + 1) % 2;
+  return (selectedWaveForm + 1) % noOfWaveForms;
 }
 
 CHSV noteColor(uint8_t note) {
@@ -116,6 +118,8 @@ CHSV waveFormColor(uint8_t waveForm) {
   switch (waveForm) {
   case waveForms.square:
     return CHSV(96, 255, 255);
+  case waveForms.noise:
+    return CHSV(0, 0, 255);
   case waveForms.silent:
   default:
     return CHSV(0, 0, 0);
@@ -210,13 +214,74 @@ void sendPulseOnAllCommPins() {
   sendPulseOnOtherCommPins(4);
 }
 
-void playSound() {
-  switch (selectedWaveForm) {
-  case waveForms.square:
-    tone(speakerPinNo, frequencies[selectedNote], 
-         durations[selectedDurationIndex]);
-    return;
+// Taken from (and edited):
+// https://github.com/ninetreesdesign/randomNumberGenerator
+uint16_t rng() {
+  static uint16_t y = 0;
+  y += (micros() && 0x1FFF); // seeded with changing number
+  y ^= y << 2;
+  y ^= y >> 7;
+  y ^= y << 7;
+  return y;
+}
+
+ISR(TIMER1_COMPA_vect) {
+  if (toggleCount > 0) {
+    switch (selectedWaveForm) {
+    case waveForms.square:
+      PORTD ^= 0b00001000;
+      break;
+    case waveForms.noise:
+      if (rng() & 1) {
+        PORTD ^= 0b00001000;
+      }
+      break;
+    }
+    toggleCount--;
+  } else {
+    stopSound();
   }
+}
+
+void stopSound() {
+  TIMSK1 = 0;
+  PORTD &= 0b11110111; // Seen in Arduino tone(), maybe not necessary
+}
+
+void playSound(
+               uint16_t frequency, // Hz
+               uint16_t duration // ms
+               ) {
+  cli(); // Disable interrupts till everything is configured
+
+  // Timer 1 is a 16-bit timer.
+
+  // Set WGM - Waveform Generation Mode - to CTC (Clear Timer on
+  // Compare Match, TOP = OCR1A):
+  bitWrite(TCCR1B, WGM13, 0);
+  bitWrite(TCCR1B, WGM12, 1);
+  bitWrite(TCCR1A, WGM11, 0);
+  bitWrite(TCCR1A, WGM10, 0);
+
+  // Disable prescaler:
+  bitWrite(TCCR1B, CS12, 0);
+  bitWrite(TCCR1B, CS11, 0);
+  bitWrite(TCCR1B, CS10, 1);
+
+  // Define how often to call the interrupt:
+  OCR1A = F_CPU / frequency / 2;
+
+  // Make ISR(TIMER2_COMPA_vect) be called when timer reaches TOP:
+  bitWrite(TIMSK1, OCIE1A, 1);
+
+  toggleCount = 2ul * frequency * duration / 1000;
+
+  sei();
+}
+
+void playSelectedSound() {
+  playSound(frequencies[selectedNote],
+            durations[selectedDurationIndex]);
 }
 
 void setup() {
@@ -286,7 +351,7 @@ void parseSingleButtonReleases() {
 
   if (aButtonHasBeenReleased) {
     showStatusWithLeds();
-    playSound();
+    playSelectedSound();
   }
 }
 
@@ -305,7 +370,7 @@ void parseButtons() {
 
 void loop() {
   if (pulseHasBeenReceived) {
-    playSound();
+    playSelectedSound();
     blinkAllLeds();
     sendPulseOnOtherCommPins(commPinThatReceivedPulse);
     pulseHasBeenReceived = false;
