@@ -284,11 +284,19 @@ void playSelectedSound() {
             durations[selectedDurationIndex]);
 }
 
+void debounceButtons() {
+  for (uint8_t i = 0; i < 4; i++) {
+    buttons[i].setDebounceTime(50);
+  }
+}
+
 void setup() {
   FastLED.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS).
     setCorrection(TypicalLEDStrip);
   FastLED.setBrightness(BRIGHTNESS);
   showStatusWithLeds();
+
+  debounceButtons();
 
   listenOnCommunicationPins();
   enablePinChangeInterrupts();
