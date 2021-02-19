@@ -107,8 +107,8 @@ CHSV noteColor(uint8_t note) {
 }
 
 CHSV durationColor(uint8_t durationIndex) {
-  const uint8_t maxDuration = noOfDurations - 1;
-  return CHSV(255 - uint32_t(durationIndex) * 95 / maxDuration,
+  const uint8_t maxDurationIndex = noOfDurations - 1;
+  return CHSV(160 + uint32_t(durationIndex) * 96 / maxDurationIndex,
               255, 255);
 }
 
