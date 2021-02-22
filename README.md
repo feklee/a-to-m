@@ -15,7 +15,8 @@ to program individual atoms.
 Design guidelines
 =================
 
-For areas without solder mask, don’t use components smaller than 0603.
+For areas without solder mask, don’t use components smaller than 0603
+and don’t put traces too close.
 
 
 License
