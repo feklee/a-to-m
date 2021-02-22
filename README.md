@@ -16,7 +16,7 @@ Design guidelines
 =================
 
 For areas without solder mask, don’t use components smaller than 0603
-and don’t put traces too close.
+and don’t put traces too close. A clearance of 0.35 mm is good.
 
 
 License
