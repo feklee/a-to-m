@@ -35,7 +35,7 @@ uint16_t durations[noOfDurations] = { // in ms
 };
 int8_t selectedDurationIndex = 1;
 
-constexpr uint8_t noOfNotes = 14;
+constexpr uint8_t noOfNotes = 10;
 uint16_t frequencies[noOfNotes] = {
   2093, // C7
   2349, // D7
@@ -48,7 +48,7 @@ uint16_t frequencies[noOfNotes] = {
   6272, // G8
   7040 // A8
 };
-uint8_t selectedNote = 7;
+uint8_t selectedNote = 5;
 
 constexpr uint8_t noOfWaveForms = 3;
 struct {
@@ -97,7 +97,9 @@ uint8_t nextWaveForm() {
 
 CHSV noteColor(uint8_t note) {
   const uint8_t maxNote = noOfNotes - 1;
-  return CHSV(uint32_t(note) * 64 / maxNote, 255, 255);
+  return CHSV(uint32_t(note) * 64 / maxNote,
+              255 - uint32_t(note) * 255 / maxNote,
+              255);
 }
 
 CHSV durationColor(uint8_t durationIndex) {
@@ -330,12 +332,12 @@ void parseSingleButtonReleases() {
   bool aButtonHasBeenReleased = false;
 
   if (buttons[buttonNos.incNote].isReleased()) {
-    selectedNote = prevNote();
+    selectedNote = nextNote();
     aButtonHasBeenReleased = true;
   }
 
   if (buttons[buttonNos.decNote].isReleased()) {
-    selectedNote = nextNote();
+    selectedNote = prevNote();
     aButtonHasBeenReleased = true;
   }
 
