@@ -7,4 +7,16 @@ atom.
 For a good experience, i.e. fast power up of a node upon connection,
 install [MiniCore][1] as boot loader.
 
+Buttons:
+
+  * Release multiple: Create a pulse propagating through the network.
+  
+  * Button 1: Increase note.
+
+  * Button 2: Change duration.
+  
+  * Button 3: Decrease note.
+  
+  * Button 4: Change waveform.
+
 [1]: https://github.com/MCUdude/MiniCore
