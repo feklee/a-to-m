@@ -30,7 +30,7 @@ Atomic tree
 Sequencer
 ---------
 
-![[Sequencer](images/sequencer.jpg)][1]  
+[![Sequencer](images/sequencer.jpg)][1]  
 [Video][1]
 
 
