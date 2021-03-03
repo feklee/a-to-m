@@ -17,19 +17,17 @@ Wire Wire Line
 	5350 2900 5150 2900
 Wire Wire Line
 	6050 4000 6050 4050
-Wire Wire Line
-	5850 3000 5950 3000
 $Comp
 L power:+5V #PWR?
 U 1 1 5FB6CCB3
-P 5150 2900
+P 5950 2900
 AR Path="/5FA6C89B/5FB6CCB3" Ref="#PWR?"  Part="1" 
 AR Path="/5FA6C6C8/5FB6CCB3" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 5150 2750 50  0001 C CNN
-F 1 "+5V" H 5165 3073 50  0000 C CNN
-F 2 "" H 5150 2900 50  0001 C CNN
-F 3 "" H 5150 2900 50  0001 C CNN
-	1    5150 2900
+F 0 "#PWR0110" H 5950 2750 50  0001 C CNN
+F 1 "+5V" H 5965 3073 50  0000 C CNN
+F 2 "" H 5950 2900 50  0001 C CNN
+F 3 "" H 5950 2900 50  0001 C CNN
+	1    5950 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -46,28 +44,28 @@ F 3 "" H 6050 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J?
+L Connector_Generic:Conn_02x02_Odd_Even J?
 U 1 1 5FB6CCC1
-P 5550 2900
+P 5650 2900
 AR Path="/5FB6CCC1" Ref="J?"  Part="1" 
 AR Path="/5FA6C89B/5FB6CCC1" Ref="J?"  Part="1" 
 AR Path="/5FA6C6C8/5FB6CCC1" Ref="J11"  Part="1" 
-F 0 "J11" H 5600 3117 50  0000 C CNN
-F 1 "MALE" H 5600 3026 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 5550 2900 50  0001 C CNN
-F 3 "~" H 5550 2900 50  0001 C CNN
-	1    5550 2900
-	1    0    0    -1  
+F 0 "J11" H 5700 3000 50  0000 C CNN
+F 1 "MALE" H 5700 2700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 5650 2900 50  0001 C CNN
+F 3 "~" H 5650 2900 50  0001 C CNN
+	1    5650 2900
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x02_Odd_Even J?
+L Connector_Generic:Conn_02x02_Top_Bottom J?
 U 1 1 5FB6CCC7
 P 5550 3900
 AR Path="/5FB6CCC7" Ref="J?"  Part="1" 
 AR Path="/5FA6C89B/5FB6CCC7" Ref="J?"  Part="1" 
 AR Path="/5FA6C6C8/5FB6CCC7" Ref="J12"  Part="1" 
-F 0 "J12" H 5600 4117 50  0000 C CNN
-F 1 "FEMALE" H 5600 4026 50  0000 C CNN
+F 0 "J12" H 5600 4000 50  0000 C CNN
+F 1 "FEMALE" H 5600 3700 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 5550 3900 50  0001 C CNN
 F 3 "~" H 5550 3900 50  0001 C CNN
 	1    5550 3900
@@ -76,11 +74,7 @@ $EndComp
 Wire Wire Line
 	5850 4000 6050 4000
 Wire Wire Line
-	5850 3900 5950 3900
-Wire Wire Line
-	5850 2900 6050 2900
-Connection ~ 6050 4000
-Connection ~ 5150 2900
+	5850 2900 5950 2900
 Wire Wire Line
 	5350 3000 5250 3000
 Wire Wire Line
@@ -288,18 +282,18 @@ F 3 "" H 4000 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x02_Top_Bottom J?
+L Connector_Generic:Conn_02x02_Odd_Even J?
 U 1 1 5FCC3ECF
-P 5650 3500
+P 5550 3500
 AR Path="/5FCC3ECF" Ref="J?"  Part="1" 
 AR Path="/5FA6C89B/5FCC3ECF" Ref="J?"  Part="1" 
 AR Path="/5FA6C6C8/5FCC3ECF" Ref="J13"  Part="1" 
-F 0 "J13" H 5700 3717 50  0000 C CNN
-F 1 "MALE" H 5700 3626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 5650 3500 50  0001 C CNN
-F 3 "~" H 5650 3500 50  0001 C CNN
-	1    5650 3500
-	-1   0    0    1   
+F 0 "J13" H 5600 3300 50  0000 C CNN
+F 1 "MALE" H 5600 3626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Horizontal" H 5550 3500 50  0001 C CNN
+F 3 "~" H 5550 3500 50  0001 C CNN
+	1    5550 3500
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	5350 3400 5150 3400
@@ -316,17 +310,27 @@ Wire Wire Line
 	5250 3500 5250 3900
 Connection ~ 5250 3500
 Wire Wire Line
-	5850 3400 6050 3400
+	5850 3900 5950 3900
 Wire Wire Line
-	6050 2900 6050 3400
+	5950 3900 5950 3400
+Connection ~ 5950 2900
 Wire Wire Line
-	6050 3400 6050 4000
-Connection ~ 6050 3400
+	5850 3400 5950 3400
+Connection ~ 5950 3400
 Wire Wire Line
-	5850 3500 5950 3500
+	5950 3400 5950 2900
 Wire Wire Line
-	5950 3000 5950 3500
+	5850 3000 6050 3000
 Wire Wire Line
-	5950 3500 5950 3900
-Connection ~ 5950 3500
+	6050 3000 6050 3500
+Connection ~ 6050 4000
+Wire Wire Line
+	5850 3500 6050 3500
+Connection ~ 6050 3500
+Wire Wire Line
+	6050 3500 6050 4000
+Text Label 5350 2900 2    50   ~ 0
+RX1T
+Text Label 5350 3000 2    50   ~ 0
+TX1T
 $EndSCHEMATC
