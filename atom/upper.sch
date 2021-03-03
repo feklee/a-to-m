@@ -747,13 +747,13 @@ Wire Wire Line
 Connection ~ 9200 2700
 Wire Wire Line
 	9200 2700 9200 3200
-Text Label 3800 2100 0    50   ~ 0
+Text Label 4000 2100 2    50   ~ 0
 RX1T
-Text Label 5300 2100 0    50   ~ 0
+Text Label 5500 2100 2    50   ~ 0
 RX2T
-Text Label 6800 2100 0    50   ~ 0
+Text Label 7000 2100 2    50   ~ 0
 RX3T
-Text Label 8300 2100 0    50   ~ 0
+Text Label 8500 2100 2    50   ~ 0
 RX4T
 Text Label 5500 2200 2    50   ~ 0
 TX2T
