@@ -8,13 +8,18 @@ constexpr uint8_t buttonPinNos[] = {
   19 // PC5
 };
 
-// This code is for RX and TX not being crossed over. (design bug in
-// the board, but fixed since)
-constexpr uint8_t communicationPinNos[] = {
+constexpr uint8_t rxPinNos[] = {
   0, // RX1 = PD0 = PCINT16
   2, // RX2 = PD2 = PCINT18
   8, // RX3 = PB0 = PCINT0
   9 // RX4 = PB1 = PCINT1
+};
+
+constexpr uint8_t txPinNos[] = {
+  1, // TX1 = PD1
+  A0, // TX2 = PC0
+  A1, // TX3 = PC1
+  A2 // TX4 = PC2
 };
 
 constexpr uint8_t speakerPinNo = 3;
@@ -23,7 +28,7 @@ constexpr uint8_t ledPinNo = 4;
 CRGB leds[4];
 
 volatile bool pulseHasBeenReceived = false;
-volatile uint8_t commPinThatReceivedPulse;
+volatile uint8_t portThatReceivedPulse;
 
 bool waitingForMultiButtonRelease = false;
 
@@ -141,12 +146,11 @@ void blinkAllLeds() {
 inline void parseSignal(const uint8_t minPinNo,
                         const uint8_t maxPinNo) {
   for (uint8_t i = 0; i < 4; i ++) {
-    const uint8_t communicationPinNo = communicationPinNos[i];
-    if (communicationPinNo >= minPinNo &&
-        communicationPinNo <= maxPinNo) {
-      if (digitalRead(communicationPinNo) == 0) {
+    const uint8_t rxPinNo = rxPinNos[i];
+    if (rxPinNo >= minPinNo && rxPinNo <= maxPinNo) {
+      if (digitalRead(rxPinNo) == 0) {
         pulseHasBeenReceived = true;
-        commPinThatReceivedPulse = i;
+        portThatReceivedPulse = i;
         break;
       }
     }
@@ -161,14 +165,21 @@ ISR(PCINT0_vect) { // D8-D13
   parseSignal(8, 13);
 }
 
-void sendPulseOnCommunicationPin(uint8_t i) {
-  uint8_t communicationPinNo = communicationPinNos[i];
-  disablePinChangeInterrupts();
-  pinMode(communicationPinNo, OUTPUT);
-  digitalWrite(communicationPinNo, LOW);
+void sendPulseOnTxPin(uint8_t i) {
+  uint8_t txPinNo = txPinNos[i];
+  digitalWrite(txPinNo, LOW);
   delay(10);
-  digitalWrite(communicationPinNo, HIGH);
-  pinMode(communicationPinNo, INPUT_PULLUP);
+  digitalWrite(txPinNo, HIGH);
+}
+
+void sendPulseOnRxPin(uint8_t i) {
+  uint8_t rxPinNo = rxPinNos[i];
+  disablePinChangeInterrupts();
+  pinMode(rxPinNo, OUTPUT);
+  digitalWrite(rxPinNo, LOW);
+  delay(10);
+  digitalWrite(rxPinNo, HIGH);
+  pinMode(rxPinNo, INPUT_PULLUP);
   enablePinChangeInterrupts();
 }
 
@@ -190,22 +201,26 @@ void disablePinChangeInterrupts() {
   PCMSK0 = 0;
 }
 
-void listenOnCommunicationPins() {
+void listenOnRxPins() {
   for (uint8_t i = 0; i < 4; i++) {
-    pinMode(communicationPinNos[i], INPUT_PULLUP);
+    pinMode(rxPinNos[i], INPUT_PULLUP);
   }
 }
 
-void sendPulseOnOtherCommPins(const uint8_t pinNotToPulse) {
+// This code works for RX and TX being crossed over (as it should be)
+// and not being crossed over (hardware bug in one of the first test
+// productions).
+void sendPulseOnOtherPorts(const uint8_t pinNotToPulse) {
   for (uint8_t i = 0; i < 4; i++) {
     if (i != pinNotToPulse) {
-      sendPulseOnCommunicationPin(i);
+      sendPulseOnTxPin(i);
+      sendPulseOnRxPin(i); // in case pins are not crossed over
     }
   }
 }
 
-void sendPulseOnAllCommPins() {
-  sendPulseOnOtherCommPins(4);
+void sendPulseOnAllPorts() {
+  sendPulseOnOtherPorts(4);
 }
 
 // Taken from (and edited):
@@ -284,6 +299,12 @@ void debounceButtons() {
   }
 }
 
+void enableTxPins() {
+  for (uint8_t i = 0; i < 4; i++) {
+      pinMode(txPinNos[i], OUTPUT);
+  }
+}
+
 void setup() {
   FastLED.addLeds<WS2813, ledPinNo, GRB>(leds, 4).
     setCorrection(TypicalLEDStrip);
@@ -292,7 +313,8 @@ void setup() {
 
   debounceButtons();
 
-  listenOnCommunicationPins();
+  enableTxPins();
+  listenOnRxPins();
   enablePinChangeInterrupts();
 }
 
@@ -359,7 +381,7 @@ void parseSingleButtonReleases() {
 
 void parseButtons() {
   if (multipleButtonsHaveBeenReleased()) {
-    sendPulseOnAllCommPins();
+    sendPulseOnAllPorts();
     return;
   }
 
@@ -374,7 +396,7 @@ void loop() {
   if (pulseHasBeenReceived) {
     playSelectedSound();
     blinkAllLeds();
-    sendPulseOnOtherCommPins(commPinThatReceivedPulse);
+    sendPulseOnOtherPorts(portThatReceivedPulse);
     pulseHasBeenReceived = false;
   }
 
