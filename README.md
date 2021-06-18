@@ -37,7 +37,7 @@ Sequencer
 ---------
 
 [![Sequencer](images/sequencer.jpg)][2]  
-[Video][1]
+[Video][2]
 
 
 License
